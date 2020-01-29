@@ -5,7 +5,6 @@
 		<meta charset = "UTF-8"/>
 		<title>Designe Life Kids</title>
 	</head>
-	
 	<body>
     <header class="header">
       <a href="#">
@@ -34,32 +33,42 @@
             <button class="slider__nav-item"></button>
           </div>
         </div>
-        <h1 class="slider__title">
-          THE OOH NOO <br> COLLECTION
-        </h1>
+        <h2 class="slider__title">
+          THE OOH NOO COLLECTION
+        </h2>
         <p class="slider__text text_design">Designed in Slovenia</p>
         <a class="slider__button-brown button" href="#">Explore now</a>
         <img class="slider__img" src="/poster-1.jpg" alt="monster in a wheelbarrow"><br>
-        <a class="slider__button-beige button" href="#">Free (continental) USA shipping on all orders of $100 USD or more!</a>
+        <div>
+          <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </div>
       </section>
       <section class="category">
         <h2 class="category__title">Category Products</h2>
-        <div class="category-list">
-          <div class="category-list__list-kids">
-            <h3 class="category-list__title-kids">Apparel <br> kids</h3>
-            <a><img class="category-list__img-kids" src="/img_kids.jpg" alt="Apparel kids"></a>
+        <div class="category__list">
+          <div class="category__list-kids">
+            <a href="#" class="category__list-link-kids">
+              <img class="category__list-img-kids" src="/img_kids.jpg" alt="Apparel kids">
+              <span class="category__list-title-kids">Apparel kids</span>
+            </a>
           </div>
-          <div class="category-list__list-holiday">
-            <h3 class="category-list__title-holiday">Holiday <br> shop</h3>
-            <a><img class="category-list__img-holiday" src="/img_holiday.jpg" alt="Holiday shop"></a>
+          <div class="category__list-holiday">
+            <a href="#" class="category__list-link-holiday">
+              <img class="category__list-img-holiday" src="/img_holiday.jpg" alt="Holiday shop">
+              <span class="category__list-title-holiday">Holiday shop</span>
+            </a>
           </div>
-          <div class="category-list__list-toys">
-            <h3 class="category-list__title-toys">Toys</h3>
-            <a><img class="category-list__img-toys" src="/img_toys.jpg" alt="Toys"></a>
+          <div class="category__list-toys">
+            <a href="#" class="category__list-link-toys">
+              <img class="category__list-img-toys" src="/img_toys.jpg" alt="Toys">
+              <span class="category__list-title-toys">Toys</span>
+            </a>
           </div>
-          <div class="category-list__list-accessories">
-            <h3 class="category-list__title-accessories">Accessories</h3>
-            <a><img class="category-list__img-accessories" src="/img_accessories.jpg" alt="Accessories"></a>
+          <div class="category__list-accessories">
+            <a href="#" class="category__list-link-accessories">
+              <img class="category__list-img-accessories" src="/img_accessories.jpg" alt="Accessories">
+              <span class="category__list-title-accessories">Accessories</span>
+            </a>
           </div>
         </div>
         <div class="slider-navig">
@@ -81,7 +90,10 @@
         </div>
         <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and 
           there are other days that i am completely shocked that four years 
-          have flown by. It's simply magical. What started as an outlet to deal 
+          have flown by. It's simply magical. 
+        </p>
+        <p class="delivery__text">
+          What started as an outlet to deal 
           with the traumatic loss of my husband, dlk has now become a truly happy
           place for me and i have you and all of the beautiful designers that we 
           work with to thank!
@@ -115,7 +127,7 @@
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical. 
           </p>
-          <!-- Тут будет карта  -->
+          <img class="contacts__img" src="/img_map.jpg" alt="map">
         </div>
       </section>
     </main>
@@ -144,8 +156,10 @@
       </nav>
       <div class="connect">
         <h4 class="connect__title">Connect</h4>
-        <input type="email" name="email" placeholder="Email">
-        <input type="submit" value="JOIN">
+        <form action="URL">
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit" value="JOIN">JOIN</button>
+        </form>
         <ul class=connect__link>
           <li><a class="connect__facebook" href="#">Facebook</a></li>
           <li><a class="connect__twitter" href="#">Twitter</a></li>
@@ -164,7 +178,7 @@
         </ul>
       </div>
       <p> Copyright &#169; 2018 Dlk • Design Life Kids</p>
-      <p>Web Design — Direct Line Development</p>
+      <a class="footer-nav__web-design" href="#">Web Design — Direct Line Development</a>
     </footer>
 	</body>
 </html>
