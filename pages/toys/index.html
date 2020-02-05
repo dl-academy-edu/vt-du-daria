@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8"/>
+    <title>Toys / Designe Life Kids</title>
+	</head>
+	<body>
+    <header class="header">
+      <a href="/../../index.html">
+        <img class="header__log" src="/../../images/logo.svg" alt="logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a class="header__nav-item" href="#">BLOG</a></li>
+          <li><a class="header__nav-item" href="/../pages/catalog/index.html">CATALOG</a></li>
+          <li><a class="header__nav-item" href="#">ABOUT US</a></li>
+        </ul>
+        <ul class="header__nav-list">
+          <li><a class="header-nav__item" href="#"><img src="/../../images/search.svg" alt="Search"/></a></li>
+          <li><a class="header-nav__item" href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="title">TOY FOR KIDS</h2>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__link" href="/../../index.html">Home</a>
+        <a class="breadcrumbs__link" href="/../pages/catalog/index.html">Catalog</a>
+        <span class=breadcrumbs__current-page>Toys</span>
+      </div>
+      <div class="selection">
+        <form class="selection__bar" action="#" method="POST">
+          <div class="cost">
+            <span class="color__title"><b>Cost</b></span>
+            <input class="cost__range" type="range" name="cost" min="0" max="500" value="100">
+            <span class="cost__range-0">0</span> 
+            <span class="cost__range-500">500</span>
+          </div>
+          <div class="color">  
+            <span class="color__title"><b>Color</b></span>
+            <ul class="color__list">
+              <li><input class="color__list-etem" type="checkbox" name="color-black" value="black">Black</li>
+              <li><input class="color__list-etem" type="checkbox" name="color-blue" value="blue">Blue</li>
+              <li><input class="color__list-etem" type="checkbox" name="color-green" value="green">Green</li>
+              <li><input class="color__list-etem" type="checkbox" name="color-white" value="white">White</li>
+            </ul>
+          </div>
+          <div class="delivery">
+            <span class="delivery__title"><b>Delivery</b></span>
+            <ul class="delivery__list">
+              <li><input class="delivery__list-etem" type="radio" name="shipping" value="free">Free shipping</li>
+              <li><input class="delivery__list-etem" type="radio" name="shipping" value="fast"> Fast shipping</li>
+            </ul>
+          </div>
+          <div class="amount">
+            <span class="amount__title"><b>Amount</b></span>
+            <table class=amount__list>
+              <tr>
+                <td><button class="amount__list-item" type="button" value="0-5">0-5</button></td>
+                <td><button class="amount__list-item" type="button" value="10-20">10-20</button></td>
+                <td><button class="amount__list-item" type="button" value="20-50">20-50</button></td>
+              </tr>
+            </table>
+          </div>
+          <button class="button-submit" type="submit">APPLY</button>
+        </form>
+      </div>
+      <section class="goods">
+        <h2 class="hidden">Goods</h2>
+        <ul class="goods__list">
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">  
+              <img src="/../../images/sharkey.jpg" alt="SHARKY BEAN BAG CHAIR COVER" class="goods__link-bg">
+              <span class="goods__link-title">SHARKY BEAN BAG CHAIR COVER</span>
+            </a>
+            <span class="goods__price">&#36;60.00 USD</span>
+          </li>
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">
+              <img src="/../../images/brass.jpg" alt="BRASS DECO FRAMES" class="goods__link-bg">
+              <span class="goods__link-title">BRASS DECO FRAMES</span>
+            </a>
+            <span class="goods__price">&#36;66.00 USD</span>
+          </li>
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">  
+              <img src="/../../images/cibo.jpg" alt="CIBO FULL APRON" class="goods__link-bg">
+              <span class="goods__link-title">CIBO FULL APRON</span>
+            </a>
+            <span class="goods__price">&#36;66.00 USD</span>
+          </li>
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">
+              <img src="/../../images/machine.jpg" alt="GATCHA GATCHA GUMBALL MACHINE" class="goods__link-bg">
+              <span class="goods__link-title">GATCHA GATCHA GUMBALL MACHINE</span>
+            </a>
+            <span class="goods__price">&#36;56.00 USD</span>
+          </li>
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">
+              <img src="/../../images/candle.jpg" alt="CHRISTMAS ADVENT SCENTED CANDLE" class="goods__link-bg">
+              <span class="goods__link-title">CHRISTMAS ADVENT SCENTED CANDLE</span>
+            </a>
+            <span class="goods__price">&#36;29.00 USD</span>
+          </li>
+          <li class="goods__list-item">
+            <a href="#" class="goods__link">
+              <img src="/../../images/tangle.jpg" alt="TANGLE SPINNING TEA LIGHT" class="goods__link-bg">
+              <span class="goods__link-title">TANGLE SPINNING TEA LIGHT</span>
+            </a>
+            <span class="goods__price">&#36;56.00 USD</span>
+          </li>
+        </ul>
+        <div class="goods__pages">
+          <button class="goods__pages-prev" type="button"></button>
+          <table class=goods__link>
+            <tr>
+              <td><a href="#" class="goods__link-item">1</a></td>
+              <td><a href="#" class="goods__link-item">2</a></td>
+              <td><a href="#" class="goods__link-item">3</a></td>
+              <td><a href="#" class="goods__link-item">4</a></td>
+            </tr>
+          </table>
+          <button class="goods__pages-next" type="button"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <h4 class="footer__nav-title">Navigation</h4>
+        <ul class="footer__nav-list">
+          <li><a class="footer__nav-item" href="#">About us</a></li>
+          <li><a class="footer__nav-item" href="#">Blog</a></li>
+          <li><a class="footer__nav-item" href="#">Design Services</a></li>
+          <li><a class="footer__nav-item" href="#">Featured On</a></li>
+          <li><a class="footer__nav-item" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav">
+        <h4 class="footer__nav-title">Customer Information</h4>
+        <ul class="footer__nav-list">
+          <li><a class="footer__nav-item" href="#">Contact us</a></li>
+          <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
+          <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
+          <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
+          <li><a class="footer__nav-item" href="#"> Privacy Policy</a></li>
+          <li><a class="footer__nav-item" href="#">Search</a></li>
+        </ul>
+      </nav>
+      <div class="footer__user">
+        <h4 class="footer__user-title">Connect</h4>
+        <form action="URL">
+          <input type="email" name="email" placeholder="Email">
+          <button type="submit" value="join">JOIN</button>
+        </form>
+        <div class="footer__social">
+          <ul class=footer__social-list>
+            <li><a class="footer__social-item" href="#">
+              <img class="footer__img" src="/../../images/facebook.png" alt="Facebook"></a>
+            </li>
+            <li><a class="footer__social-item" href="#">
+              <img class="footer__img" src="/../../images/twitter.png" alt="Twitter"></a>
+            </li>
+            <li><a class="footer__social-item" href="#">
+              <img class="footer__img" src="/../../images/pinterest.png" alt="Pinterest"></a>
+            </li>
+            <li><a class="footer__social-item" href="#">
+              <img class="footer__img" src="/../../images/instagram.png" alt="Instagram"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__success">
+        <p>Company Rating</p>
+        <ul class="footer__success-list">
+          <li class="footer__success-item">&#9733;</li>
+          <li class="footer__success-item">&#9733;</li>
+          <li class="footer__success-item">&#9733;</li>
+          <li class="footer__success-item">&#9733;</li>
+          <li class="footer__success-item">&#9733;</li>
+        </ul>
+      </div>
+      <p> Copyright &#169; 2018 Dlk • Design Life Kids</p>
+      <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+    </footer>
+	</body>
+</html>
