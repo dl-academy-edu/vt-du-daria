@@ -22,7 +22,7 @@
       </nav>
     </header>
     <main>
-      <h2 class="title">TOY FOR KIDS</h2>
+      <h1 class="title">TOY FOR KIDS</h1>
       <div class="breadcrumbs">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
         <a class="breadcrumbs__link" href="/../pages/catalog/index.html">Catalog</a>
@@ -39,26 +39,53 @@
           <div class="color">  
             <span class="color__title"><b>Color</b></span>
             <ul class="color__list">
-              <li><input class="color__list-etem" type="checkbox" name="color-black" value="black">Black</li>
-              <li><input class="color__list-etem" type="checkbox" name="color-blue" value="blue">Blue</li>
-              <li><input class="color__list-etem" type="checkbox" name="color-green" value="green">Green</li>
-              <li><input class="color__list-etem" type="checkbox" name="color-white" value="white">White</li>
+              <li>
+                <input class="color__list-etem" id="color-black" type="checkbox" name="color-black" value="black">
+                <label class="color__list-etem" for="color-black">Black</label>
+              </li>
+              <li>
+                <input class="color__list-etem" id="color-blue" type="checkbox" name="color-blue" value="blue">
+                <label class="color__list-etem" for="color-blue">Blue</label>
+              </li>
+              <li>
+                <input class="color__list-etem" id="color-green" type="checkbox" name="color-green" value="green">
+                <label class="color__list-etem" for="color-green">Green</label>
+              </li>
+              <li>
+                <input class="color__list-etem" id="color-white" type="checkbox" name="color-white" value="white">
+                <label class="color__list-etem" for="color-white">White</label>
+              </li>
             </ul>
           </div>
           <div class="delivery">
             <span class="delivery__title"><b>Delivery</b></span>
             <ul class="delivery__list">
-              <li><input class="delivery__list-etem" type="radio" name="shipping" value="free">Free shipping</li>
-              <li><input class="delivery__list-etem" type="radio" name="shipping" value="fast"> Fast shipping</li>
+              <li>
+                <input class="delivery__list-etem" id="free-shipp" type="radio" name="shipping" value="free">
+                <label class="delivery__list-etem" for="free-shipp">Free shipping</label>
+              </li>
+              <li>
+                <input class="delivery__list-etem" id="fast-shipp" type="radio" name="shipping" value="fast">
+                <label class="delivery__list-etem" for="fast-shipp">Fast shipping</label>
+              </li>
             </ul>
           </div>
           <div class="amount">
             <span class="amount__title"><b>Amount</b></span>
             <table class="amount__list">
               <tr>
-                <td><button class="amount__list-item" type="button" value="0-5">0-5</button></td>
-                <td><button class="amount__list-item" type="button" value="10-20">10-20</button></td>
-                <td><button class="amount__list-item" type="button" value="20-50">20-50</button></td>
+                <td>
+                  <input class="amount__list-item" id="range-0-5" type="radio" name="range" value="0-5">
+                  <label class="amount__list-item" for="range-0-5"><span>0-5</span></label>
+                </td>
+                <td>
+                  <input class="amount__list-item" id="range-10-20" type="radio" name="range" value="10-20">
+                  <label class="amount__list-item" for="range-10-20"><span>0-5</span></label>
+                </td>
+                <td>
+                  <input class="amount__list-item" id="range-20-50" type="radio" name="range" value="20-50">
+                  <label class="amount__list-item" for="range-20-50">20-50<span>20-50</span></label>
+                </td>
               </tr>
             </table>
           </div>
@@ -112,7 +139,7 @@
           </li>
         </ul>
         <div class="goods__pages">
-          <button class="goods__pages-prev" type="button"></button>
+          <a href="#" class="goods__link-pages-prev"></a>
           <table class="goods__link">
             <tr>
               <td><a href="#" class="goods__link-item">1</a></td>
@@ -121,7 +148,7 @@
               <td><a href="#" class="goods__link-item">4</a></td>
             </tr>
           </table>
-          <button class="goods__pages-next" type="button"></button>
+          <a href="#" class="goods__link-pages-next"></a>
         </div>
       </section>
     </main>
