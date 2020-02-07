@@ -157,10 +157,10 @@
         <h4 class="footer__user-title">Connect</h4>
         <form action="URL">
           <input type="email" name="email" placeholder="Email">
-          <button type="submit" value="JOIN">JOIN</button>
+          <button type="submit" value="join">JOIN</button>
         </form>
         <div class="footer__social">
-          <ul class=footer__social-list>
+          <ul class="footer__social-list">
             <li><a class="footer__social-item" href="#">
               <img class="footer__img" src="/images/facebook.png" alt="Facebook"></a>
             </li>
@@ -189,5 +189,21 @@
       <p> Copyright &#169; 2018 Dlk • Design Life Kids</p>
       <a class="footer__link" href="#">Web Design — Direct Line Development</a>
     </footer>
+    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+      <label class="modal__label" for="user-name" >Name</label>
+      <input class="modal__input" id="user-name" type="text" name="name">
+      <label class="modal__label" for="user-phone" >Phone</label>
+      <input class="modal__input" id="user-phone" type="text" name="phone">
+      <label class="modal__label" for="user-email" >Email</label>
+      <input class="modal__input" id="user-email" type="email" name="email">
+      <label class="modal__label" for="user-message" >Message</label>
+      <textarea class="modal__input" id="user-message" name="message"></textarea>
+      <div class="modal__accept">
+        <input type="checkbox" id="user-accept" name="accept" value="accept">
+        By click on the button, you concent to the processing of you personal data
+      </div>
+      <button class="button-submit" type="submit">SUBMIT</button>
+      <button class="button-to-close" type="button">X</button>
+    </form>
 	</body>
 </html>
