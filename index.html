@@ -2,8 +2,16 @@
 <html lang="en">
   <head>
 		<meta charset="UTF-8"/>
-		<title>Designe Life Kids</title>
-	</head>
+    <title>Designe Life Kids</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
 	<body>
     <header class="header">
       <a href="/index.html">
@@ -11,16 +19,17 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li><a class="header__nav-item" href="#">BLOG</a></li>
+          <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
           <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
           <li><a class="header__nav-item" href="#">ABOUT US</a></li>
         </ul>
         <ul class="header__nav-list">
-          <li><a class="header-nav__item" href="#"><img src="/images/search.svg" alt="Search"/></a></li>
-          <li><a class="header-nav__item" href="#">CONTACT US</a></li>
+          <li><a class="header__nav-item" href="#"><img src="/images/search.svg" alt="Search"/></a></li>
+          <li><a class="header__nav-item-bold" href="#">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="slider">
         <div class="slider__nav">
@@ -32,65 +41,77 @@
             <button class="slider__nav-item"></button>
           </div>
         </div>
+
         <h2 class="slider__title">
           THE OOH NOO COLLECTION
         </h2>
         <p class="slider__text">Designed in Slovenia</p>
         <a class="slider__link" href="#">Explore now</a>
         <img src="/images/monster.png" alt="monster in a wheelbarrow" class="slider__link-bg"><br>
-        <div>
+        
+        <div class="slider__text_addit">
           Free (continental) USA shipping on all orders of $100 USD or more!
         </div>
       </section>
+
       <section class="goods">
         <h2 class="goods__title">CATEGORY PRODUCTS</h2>
         <ul class="goods__list">
           <li class="goods__list-item">
             <a href="/pages/catalog/index.html" class="goods__link">
               <span class="goods__link-title">APPAREL KIDS</span>
-              <img src="/images/kids.png" alt="APPAREL KIDS" class="goods__link-bg">
+              <img src="/images/kids.png" alt="APPAREL KIDS" class="goods__link-grey">
             </a>
           </li>
+
           <li class="goods__list-item">
             <a href="/pages/catalog/index.html" class="goods__link">
               <span class="goods__link-title">HOLIDAY SHOP</span>
-              <img src="/images/holiday.png" alt="HOLIDAY SHOP" class="goods__link-bg">
+              <img src="/images/holiday.png" alt="HOLIDAY SHOP" class="goods__link-pale_pink">
             </a>
           </li>
+
           <li class="goods__list-item">
             <a href="/pages/catalog/index.html" class="goods__link">
               <span class="goods__link-title">TOYS</span>
-              <img src="/images/toys.png" alt="TOYS" class="goods__link-bg">
+              <img src="/images/toys.png" alt="TOYS" class="goods__link-beige">
             </a>
           </li>
+
           <li class="goods__list-item">
             <a href="/pages/catalog/index.html" class="goods__link">
               <span class="goods__link-title">ACCESSORIES</span>
-              <img src="/images/accesseories.png" alt="ACCESSORIES" class="goods__link-bg">
+              <img src="/images/accesseories.png" alt="ACCESSORIES" class="goods__link-violet">
             </a>
           </li>
         </ul>
+
         <div class="goods__slider">
           <div class="goods__slider-nav">
             <button type="button" class="goods__slider-prev"></button>
             <button type="button" class="goods__slider-next"></button>
           </div>
+
           <div class="goods__slider-content">
             Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.
           </div>
         </div>
       </section>
+
       <section class="additional-inform">
         <div class="additional-inform__thumb">
           <img src="/images/woman.jpg" alt="Image with a woman">
         </div>
+
         <div class="additional-inform__inner">
           <h2 class="additional-inform__title">DELIVERY</h2>
+
           <div class="additional-inform__menu">
             <button type="button" class="additional-inform__menu-item active">Delivery</button>
             <button type="button" class="additional-inform__menu-item">Guarantee</button>
             <button type="button" class="additional-inform__menu-item">Credit</button>
           </div>
+
           <div class="additional-inform__content">
             <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
               shocked that four years have flown by. It's simply magical.</p>
@@ -100,8 +121,9 @@
           </div>
         </div>
       </section>
+
       <section class="partners">
-        <h2 class="partners__title">Partners</h2>
+        <h2 class="visually-hidden">Partners</h2>
         <ul class="partners__list">
           <li><a class="partners__list-item" href="#"><img src="/images/mail.png" alt="mail"></a></li>
           <li><a class="partners__list-item" href="#"><img src="/images/apple.png" alt="apple"></a></li>
@@ -109,10 +131,11 @@
           <li><a class="partners__list-item" href="#"><img src="/images/owox.png" alt="owox"></a></li>
         </ul>
       </section>
+
       <section class="about-us">
         <div class="about-us__meta">
           <h3 class="about-us__title">DESIGN LIFE KIDS</h3>
-          <p>About us</p>
+          <button type="button" class="about-us__button">About us</button>
           <p class="about-us__content">
             Some days i feel like i've been working on dlk 
             my entire life and there are other days that i am completely shocked
@@ -120,6 +143,7 @@
           </p>
           <a class="about-us__link" href="#">BY NOW</a>
         </div>
+
         <div class="about-us__meta">
           <h3 class="about-us__title">CONTACTS</h3>
           <p class="about-us__content">
@@ -130,9 +154,10 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <nav class="footer__nav">
-        <h4 class="footer__nav-title">Navigation</h4>
+        <p class="footer__nav-title">Navigation</p>
         <ul class="footer__nav-list">
           <li><a class="footer__nav-item" href="#">About us</a></li>
           <li><a class="footer__nav-item" href="#">Blog</a></li>
@@ -142,8 +167,9 @@
           <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
         </ul>
       </nav>
+
       <nav class="footer__nav">
-        <h4 class="footer__nav-title">Customer Information</h4>
+        <p class="footer__nav-title">Customer Information</p>
         <ul class="footer__nav-list">
           <li><a class="footer__nav-item" href="#">Contact us</a></li>
           <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
@@ -153,12 +179,14 @@
           <li><a class="footer__nav-item" href="#">Search</a></li>
         </ul>
       </nav>
+
       <div class="footer__user">
-        <h4 class="footer__user-title">Connect</h4>
+        <p class="footer__user-title">Connect</p>
         <form action="URL">
           <input type="email" name="email" placeholder="Email">
-          <button type="submit" value="join">JOIN</button>
+          <button  class ="button-join" type="submit" value="join">JOIN</button>
         </form>
+
         <div class="footer__social">
           <ul class="footer__social-list">
             <li><a class="footer__social-item" href="#">
@@ -176,8 +204,9 @@
           </ul>
         </div>
       </div>
+      
       <div class="footer__success">
-        <p>Company Rating</p>
+        <p class="footer__success-title">Company Rating</p>
         <ul class="footer__success-list">
           <li class="footer__success-item">&#9733;</li>
           <li class="footer__success-item">&#9733;</li>
@@ -186,22 +215,28 @@
           <li class="footer__success-item">&#9733;</li>
         </ul>
       </div>
-      <p> Copyright &#169; 2018 Dlk • Design Life Kids</p>
+      <p class="footer__success-copyr">Copyright &#169; 2018 Dlk • Design Life Kids</p>
       <a class="footer__link" href="#">Web Design — Direct Line Development</a>
     </footer>
+
     <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
       <label class="modal__label" for="user-name" >Name</label>
       <input class="modal__input" id="user-name" type="text" name="name">
+
       <label class="modal__label" for="user-phone" >Phone</label>
       <input class="modal__input" id="user-phone" type="text" name="phone">
+
       <label class="modal__label" for="user-email" >Email</label>
       <input class="modal__input" id="user-email" type="email" name="email">
+
       <label class="modal__label" for="user-message" >Message</label>
       <textarea class="modal__input" id="user-message" name="message"></textarea>
-      <div class="modal__accept">
+
+      <fieldset class="modal__accept">
         <input type="checkbox" id="user-accept" name="accept" value="accept">
         By click on the button, you concent to the processing of you personal data
-      </div>
+      </fieldset>
+
       <button class="button-submit" type="submit">SUBMIT</button>
       <button class="button-to-close" type="button">X</button>
     </form>

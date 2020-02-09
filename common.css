@@ -1,0 +1,79 @@
+/* Глобальные стили */
+body { 
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Crimson Text', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  margin: 0;  
+}
+
+a { 
+  text-decoration: none; 
+}
+
+html { 
+  box-sizing: border-box; 
+}
+
+*, 
+*::before,
+*::after { 
+  box-sizing: inherit; 
+}
+
+img { 
+  max-width: 100%;
+}
+
+.header__nav-list{
+  list-style-type: none;
+}
+
+/* header */
+.header__nav-item {
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.header__nav-item-bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+/* footer */
+.footer__nav-list, 
+.footer__social-list,
+.footer__success-list  {
+  list-style-type: none;
+}
+
+.footer {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background: #434343;
+}
+  
+.footer__nav-title,
+.footer__user-title,
+.footer__link {
+  color: #AAAAAA;
+}
+
+.button-join {
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #000000;
+}
+
+.footer__nav-item,
+.footer__success-title,
+.footer__success-list,
+.footer__success-copyr {
+  color: #FFFFFF;
+}
