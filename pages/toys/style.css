@@ -1,0 +1,79 @@
+.goods__list-item,
+.goods__pages-list {
+  list-style-type: none;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.breadcrumbs {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.breadcrumbs__link{
+  color: #1E0606;
+}
+
+/* seliction form */
+.selection__bar {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.selection__title {
+  font-weight: bold;
+}
+
+.selection__button-submit {
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #000000;
+}
+
+/* goods */
+.goods__link-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.goods__link-bg {
+  background-image: url("/../../images/sharkey.jpg");
+  background-image: url("/../../images/brass.jpg");
+  background-image: url("/../../images/cibo.jpg");
+  background-image: url("/../../images/machine.jpg");
+  background-image: url("/../../images/candle.jpg");
+  background-image: url("/../../images/tangle.jpg" );
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.goods__price{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.goods__pages-list{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1E0606;
+}

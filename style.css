@@ -1,0 +1,194 @@
+.goods__list-item,
+.partners__list {
+  list-style-type: none;
+}
+
+/* slider */
+.slider {
+  background-image: url("/images/monster.png");
+  background: #EEE4DB;
+  background-repeat: no-repeat;
+  }
+
+.slider__nav-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+  /* background: #EEE4DB; */
+}
+
+.slider__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.slider__text {
+  font-family:'Crimson Text', serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.slider__link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+div.slider__text_addit {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  background: #C29974;
+  color: #FFFFFF;
+}
+
+/* goods */
+.goods__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.goods__link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.goods__link-grey {
+  background-image: url("/images/kids.png");
+  background-blend-mode: multiply;
+  background: #DBE4DB;
+  background-repeat: no-repeat;
+}
+
+.goods__link-pale_pink {
+  background-image: url("/images/holiday.png");
+  background-blend-mode: multiply;
+  background: rgba(186, 142, 107, 0.3);
+  background-repeat: no-repeat;
+}
+
+.goods__link-beige {
+  background-image: url("/images/toys.png");
+  background-blend-mode: multiply;
+  background: #F8F2DA;
+  background-repeat: no-repeat;
+}
+
+.goods__link-violet {
+  background-image: url("/images/accesseories.png");
+  background-blend-mode: multiply;
+  background: rgba(9, 3, 79, 0.17);;
+  background-repeat: no-repeat;
+}
+
+.goods__slider-content {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.additional-inform__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.additional-inform__menu-item {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.additional-inform__content {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.additional-inform__link {
+  background: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+/* about-us */
+.about-us__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.about-us__button {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.about-us__content {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__link {
+  background: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.modal-window {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.button-submit {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #E1E1E1;
+  background: #C1C1C1;
+}

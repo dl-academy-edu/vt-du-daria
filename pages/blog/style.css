@@ -1,0 +1,72 @@
+.announce__list-item,
+.announce__pages-list {
+  list-style-type: none;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.breadcrumbs {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.breadcrumbs__link {
+  color: #1E0606;
+}
+
+/* announce */
+.announce__link-bg {
+  background-image: url("/../../images/top_5.jpg");
+  background-image: url("/../../images/financial.jpg");
+  background-image: url("/../../images/company.jpg");
+  background-image: url("/../../images/best_fin.jpg");
+  background-image: url("/../../images/princess.jpg");
+  background-image: url("/../../images/fastes_5.jpg" );
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.announce__date {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+}
+
+.announce__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E0606;
+}
+
+.announce__text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.announce__pages-list {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1E0606;
+}
