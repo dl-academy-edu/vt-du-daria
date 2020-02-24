@@ -4,7 +4,8 @@ body {
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Crimson Text', serif; */
   /* font-family: 'Roboto', sans-serif; */
-  margin: 0;  
+  margin: 0;
+  background-color: #F4F4F4;
 }
 
 a { 
@@ -25,55 +26,347 @@ img {
   max-width: 100%;
 }
 
-.header__nav-list{
+.container-back {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; 
+
+  background-color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  padding: 0px 20px;
+  margin: 0 auto; 
+}
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+/* header *************************************/
+.header {
+  display: flex;
+  padding: 49px 20px 36px;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex; 
+  align-items: center;
+  min-width: 100px;
+  height: 52px;
+}
+
+.header__img-logo:hover {
+  opacity: 0.5;
+}
+
+.header__nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-list,
+.header__nav-list_links {
   list-style-type: none;
 }
 
-/* header */
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-left: 60px;
+}
+
+.header__nav-list_links {
+  list-style-type: none;
+  display: flex;
+  padding-top: 3px; 
+}
+
 .header__nav-item {
+  padding-right: 20px;
+
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
 }
 
-.header__nav-item-bold {
+.header__nav-item:hover {
+  opacity: 0.5;
+}
+
+.header__nav-item_link-bold {
+  margin-left: 2px; 
+  margin-right: 4px;
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
 }
 
-/* footer */
+.header__nav-item_link-bold:hover {
+  opacity: 0.5;
+}
+
+/* footer **************************/
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  background: #434343;
+}
+
+.footer__nav-connect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 98px 110px 13px;
+}
+
 .footer__nav-list, 
 .footer__social-list,
 .footer__success-list  {
   list-style-type: none;
 }
 
-.footer {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  background: #434343;
-}
-  
 .footer__nav-title,
 .footer__user-title,
 .footer__link {
   color: #AAAAAA;
 }
 
-.button-join {
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #000000;
-}
-
 .footer__nav-item,
 .footer__success-title,
 .footer__success-list,
-.footer__success-copyr {
+.footer__copyr {
+  color: #FFFFFF;
+}
+
+.footer__nav-title,
+.footer__user-title,
+.footer__nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer__nav {
+  width: 389px;
+}
+
+.footer__nav-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer__nav-list:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  margin-top: 23px;
+  margin-bottom: 28px;
+
+  background-color: #666666;
+  border: none;
+}
+
+.footer__nav-item {
+  display: block;
+  padding-bottom: 16px;
+
+  background-color: #434343;
+}
+
+.footer__nav-item:hover {
+  opacity: 0.5;
+}
+
+.footer__nav-item:active {
+  opacity: 0.2;
+}
+
+.footer__user-title:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 23px;
+  margin-bottom: 27px;
+  width: 100%;
+  height: 1px;
+
+  background-color: #666666;
+  border: none;
+}
+
+.footer__email {
+  padding: 10px 10px;
+  width: 298px;
+
+  color: #FFFFFF;
+
+  background-color: #666666;
+  border:none;
+}
+
+.footer__email:hover {
+  border: 1px solid #FFFFFF; 
+}
+
+.footer__email:focus {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.footer__user-connect {
+  display:flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+.footer__social-item {
+  padding-right: 10px;
+}
+
+.footer__img:hover {
+  opacity: 0.5;
+}
+
+.footer__additional:before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+
+  background-color: #666666;
+  border: none;
+}
+
+.footer__additional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 110px;
+  padding-bottom: 100px;
+}
+
+.footer__social-list {
+  display:flex;
+  padding: 0px;
+  padding-top:25px;
+  margin: 0px;
+}
+
+.footer__web-design,
+.footer__copyr,
+.footer__success {
+  display:flex;
+  width: 380px;
+  padding-top: 7px;
+}
+
+.footer__success {
+  padding-top: 8px;
+}
+
+.footer__success-title {
+  margin: 0px;
+}
+
+.footer__success-title_hover {
+  color: #C29974;
+}
+
+.footer__success-list {
+  display:flex;
+  margin:0px;
+  padding-left: 25px;
+}
+
+.footer__success-item {
+  padding-right: 3px;
+  align-items: center;
+}
+
+/* КНОПКА */
+.footer__button-join {
+  width: 81px; 
+  padding: 9px 22px;
+
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+/* .footer__button-join:hover{
+  background: #C29974;
+}
+
+.footer__button-join:active{
+  background: #CFAF91;
+} */
+
+.footer__lable-star {
+  display: block;
+  position: relative;
+  width: 17px;
+  height: 17px; 
+  margin: 0 auto;
+
+  background-color: #434343;
+  border: none;
+}
+
+.footer__input-star {
+  display: none;
+} 
+
+.footer__input-star + .star {
+  position: absolute;
+  left: 0px; 
+  top:4px;
+  width: 100%;
+  height: 100%;
+  background: url(images/star.png) no-repeat;
+  background-color: #434343;
+  cursor: pointer;
+  border: none;
+}
+
+.footer__input-star:hover + .star {
+  background: url(images/star-hover.png) no-repeat;
+  background-color: #434343;
+}
+
+.footer__input-star:checked + .star {
+  background: url(images/star-focus.png) no-repeat;
+  background-color: #434343;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
   color: #FFFFFF;
 }

@@ -10,31 +10,33 @@
   </head>
 
 	<body>
-    <header class="header">
-      <a href="/../../index.html">
-        <img class="header__log" src="/../../images/logo.svg" alt="logo">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><span class="header__nav-item">BLOG</span></li>
-          <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
-          <li><a class="header__nav-item" href="#">ABOUT US</a></li>
-        </ul>
-        <ul class="header__nav-list">
-          <li><a class="header-nav__item" href="#"><img src="/../../images/search.svg" alt="Search"/></a></li>
-          <li><a class="header__nav-item-bold" href="#">CONTACT US</a></li>
-        </ul>
-      </nav>
+    <header class="header-main container-back">
+      <div  class="header container">
+        <a class="header__logo" href="/../../index.html">
+          <img class="header__img-logo" src="/../../images/logo.png" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><span class="header__nav-item">BLOG</span></li>
+            <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
+            <li><a class="header__nav-item" href="#">ABOUT US</a></li>
+          </ul>
+          <ul class="header__nav-list_links">
+            <li><a class="header__nav-item" href="#"><img src="/../../images/search.png" alt="Search"/></a></li>
+            <li><a class="header__nav-item_link-bold" href="/pages/contact-us/index.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
-    <main>
-      <h2 class="title">BLOG</h2>
-      <div class="breadcrumbs">
+    <main class="main container-back">
+      <h2 class="title container">BLOG</h2>
+      <div class="breadcrumbs container">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
         <span class="breadcrumbs__current-page">Blog</span>
       </div>
 
-      <section class="announce">
+      <section class="announce container">
         <ul class="announce__list">
           <li class="announce__list-item">
             <a class="announce__link" href="#">
@@ -131,68 +133,104 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <nav class="footer__nav">
-        <p class="footer__nav-title">Navigation</p>
-        <ul class="footer__nav-list">
-          <li><a class="footer__nav-item" href="#">About us</a></li>
-          <li><a class="footer__nav-item" href="#">Blog</a></li>
-          <li><a class="footer__nav-item" href="#">Design Services</a></li>
-          <li><a class="footer__nav-item" href="#">Featured On</a></li>
-          <li><a class="footer__nav-item" href="#">2018 Holiday Catalog</a></li>
-          <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer__nav">
-        <p class="footer__nav-title">Customer Information</p>
-        <ul class="footer__nav-list">
-          <li><a class="footer__nav-item" href="#">Contact us</a></li>
-          <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
-          <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
-          <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
-          <li><a class="footer__nav-item" href="#"> Privacy Policy</a></li>
-          <li><a class="footer__nav-item" href="#">Search</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__user">
-        <p class="footer__user-title">Connect</p>
-        <form action="URL">
-          <input type="email" name="email" placeholder="Email">
-          <button  class ="button-join" type="submit" value="join">JOIN</button>
-        </form>
-
-        <div class="footer__social">
-          <ul class="footer__social-list">
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/twitter.png" alt="Twitter"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/pinterest.png" alt="Pinterest"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/instagram.png" alt="Instagram"></a>
-            </li>
+    <footer class="footer container-back">
+      <div class="footer__nav-connect">
+        <div class="footer__nav">
+          <p class="footer__nav-title">Navigation</p>
+          <ul class="footer__nav-list">
+            <li><a class="footer__nav-item" href="#">About Us</a></li>
+            <li><a class="footer__nav-item" href="#">Blog</a></li>
+            <li><a class="footer__nav-item" href="#">Design Services</a></li>
+            <li><a class="footer__nav-item" href="#">Featured On</a></li>
+            <li><a class="footer__nav-item" href="#">2018 Holiday Catalog</a></li>
+            <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
           </ul>
         </div>
+
+        <div class="footer__nav">
+          <p class="footer__nav-title">Customer Information</p>
+          <ul class="footer__nav-list">
+            <li><a class="footer__nav-item" href="/../../pages/contact-us/index.html">Contact Us</a></li>
+            <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
+            <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
+            <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
+            <li><a class="footer__nav-item" href="#"> Privacy Policy</a></li>
+            <li><a class="footer__nav-item" href="#">Search</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__user-connect">
+          <p class="footer__user-title">Connect</p>
+
+          <form action="URL">
+            <input class="footer__email" type="email" name="email" placeholder="Email"><!--
+          --><button  class ="footer__button-join" type="submit" value="join">JOIN</button>
+          </form>
+
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/facebook.png" alt="Facebook"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/twitter.png" alt="Twitter"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/pinterest.png" alt="Pinterest"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/instagram.png" alt="Instagram"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-      <div class="footer__success">
-        <p class="footer__success-title">Company Rating</p>
-        <ul class="footer__success-list">
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-        </ul>
+
+      <div class="footer__additional">
+        <form class="footer__success"> 
+          <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
+          <ul class="footer__success-list footer__success-list_js">
+            <li class="footer__success-item">
+              <label class="footer__lable-star">
+                <input class="footer__input-star" type="checkbox" name="#" value="one-star">
+                <span class="star"></span>
+              </label>
+            </li>
+            <li class="footer__success-item">
+              <label class="footer__lable-star">
+                <input class="footer__input-star" type="checkbox" name="two-star" value="two-star">
+                <span class="star"></span>
+              </label>
+            </li>
+            <li class="footer__success-item">
+              <label class="footer__lable-star">
+                <input class="footer__input-star" type="checkbox" name="three-star" value="three-star">
+                <span class="star"></span>
+              </label>
+            </li>
+            <li class="footer__success-item">
+              <label class="footer__lable-star">
+                <input class="footer__input-star" type="checkbox" name="four-star" value="four-star">
+                <span class="star"></span>
+              </label>
+            </li>
+            <li class="footer__success-item">
+              <label class="footer__lable-star">
+                <input class="footer__input-star" type="checkbox" name="five-star" value="five-star">
+                <span class="star"></span>
+              </label>
+            </li>
+          </ul>
+        </form> 
+
+        <div class="footer__copyr">
+          <p >Copyright &#169; 2018 Dlk • Design Life Kids</p>
+        </div>
+        <div class="footer__web-design">
+          <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+        </div>
       </div>
-      <p class="footer__success-copyr">Copyright &#169; 2018 Dlk • Design Life Kids</p>
-      <a class="footer__link" href="#">Web Design — Direct Line Development</a>
     </footer>
+    <script src="script.js"></script>
 	</body>
 </html>

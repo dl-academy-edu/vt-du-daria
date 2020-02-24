@@ -3,7 +3,7 @@
   list-style-type: none;
 }
 
-.title{
+.title {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -19,12 +19,20 @@
   line-height: 25px;
 }
 
-.breadcrumbs__link{
+.breadcrumbs__link {
   color: #1E0606;
 }
 
 /* seliction form */
+
+.selection {
+  padding: 0 110px;
+  background: rgba(125, 151, 218, 0.2);
+}
+
 .selection__bar {
+  display: flex;
+
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
