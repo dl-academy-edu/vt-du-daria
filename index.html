@@ -19,6 +19,7 @@
           <ul class="header__nav-list">
             <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
             <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
+            <li><a class="header__nav-item" href="/pages/toys/index.html">TOYS</a></li>
             <li><a class="header__nav-item" href="#">ABOUT US</a></li>
           </ul>
           <ul class="header__nav-list_links">
@@ -55,35 +56,32 @@
 
       <section class="goods container">
         <h2 class="goods__title">CATEGORY PRODUCTS</h2>
-        <div class="goods__list">
-          <div class="goods__list-item goods__list-item_1">
-            <a class="goods__link" href="/pages/catalog/index.html" >
+        <ul class="goods__list">
+          <li class="goods__list-item goods__list-item_1">
+            <a class="goods__link" href="/pages/catalog/index.html">
               <span class="goods__link-title">APPAREL KIDS</span>
               <!-- <img src="/images/kids.png" alt="APPAREL KIDS" class="goods__link-grey"> -->
             </a>
-          </div>
-
-          <div class="goods__list-item goods__list-item_2">
+          </li>
+          <li class="goods__list-item goods__list-item_2">
             <a class="goods__link" href="/pages/catalog/index.html">
               <span class="goods__link-title">HOLIDAY SHOP</span>
               <!-- <img src="/images/holiday.png" alt="HOLIDAY SHOP" class="goods__link-bg"> -->
             </a>
-          </div>
-
-          <div class="goods__list-item goods__list-item_3">
-            <a class="goods__link" href="/pages/toys/index.html" >
+          </li>
+          <li class="goods__list-item goods__list-item_3">
+            <a class="goods__link" href="/pages/toys/index.html">
               <span class="goods__link-title">TOYS</span>
               <!-- <img src="/images/toys.png" alt="TOYS" class="goods__link-beige"> -->
             </a>
-          </div>
-
-          <div class="goods__list-item goods__list-item_4">
-            <a class="goods__link" href="/pages/catalog/index.html" >
+          </li>
+          <li class="goods__list-item goods__list-item_4">
+            <a class="goods__link" href="/pages/catalog/index.html">
               <span class="goods__link-title">ACCESSORIES</span>
               <!-- <img src="/images/accesseories.png" alt="ACCESSORIES" class="goods__link-violet"> -->
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="goods__slider">
           <div class="goods__slider-nav">
@@ -190,7 +188,7 @@
           <p class="footer__user-title">Connect</p>
 
           <form action="URL">
-            <input class="footer__email" type="email" name="email" placeholder="Email"><!--
+            <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
           --><button  class ="footer__button-join" type="submit" value="join">JOIN</button>
           </form>
 
@@ -216,38 +214,28 @@
       <div class="footer__additional">
         <form class="footer__success"> 
           <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
-          <ul class="footer__success-list footer__success-list_js">
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="#" value="one-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="two-star" value="two-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="three-star" value="three-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="four-star" value="four-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="five-star" value="five-star">
-                <span class="star"></span>
-              </label>
-            </li>
-          </ul>
+          <div class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+            <label class="footer__lable-star" for="star-5" title="Оценка «5»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <label class="footer__lable-star" for="star-4" title="Оценка «4»">
+              <img class="star" src="/images/star.png" alt="star" >
+            </label> 
+            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            <label class="footer__lable-star" for="star-3" title="Оценка «3»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <label class="footer__lable-star" for="star-2" title="Оценка «2»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <label class="footer__lable-star" for="star-1" title="Оценка «1»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+          </div>
         </form> 
 
         <div class="footer__copyr">
@@ -260,7 +248,7 @@
     </footer>
 
     <div class="modal-bg modal-bg_close modal-bg_js">
-      <form class="modal-window " action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+      <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
         <label class="modal-window__label" for="user-name"> Name</label>
         <input class="modal-window__input modal-window__input_js" id="user-name" type="text" name="name">
         
@@ -280,9 +268,10 @@
         <textarea class="modal-window__input" id="user-message" name="message"></textarea>
   
         <fieldset class="modal-window__accept">
-          <label class="user-accept">
-            <input class="user-input__checkbox" type="checkbox" name="accept" value="accept">
-            <span class="user-click"></span>By click on the button, you concent to the processing of you personal data
+          <label class="modal-window__accept-lable">
+            <input class="modal-window__accept-checkbox hidden" type="checkbox" name="accept" value="accept">
+            <span class="modal-window__accept-checkbox-click"></span>
+            <span class="modal-window__text">By click on the button, you concent to the processing of you personal data</span>
           </label>
         </fieldset>
   

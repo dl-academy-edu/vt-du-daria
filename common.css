@@ -27,6 +27,7 @@ img {
 }
 
 .container-back {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto; 
 
@@ -34,6 +35,7 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: 1220px;
   padding: 0px 20px;
   margin: 0 auto; 
@@ -58,6 +60,7 @@ img {
 
 .header__logo {
   display: flex; 
+  flex-wrap: wrap;
   align-items: center;
   min-width: 100px;
   height: 52px;
@@ -190,7 +193,7 @@ img {
 
 .footer__nav-item {
   display: block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   background-color: #434343;
 }
@@ -203,7 +206,7 @@ img {
   opacity: 0.2;
 }
 
-.footer__user-title:after {
+.footer__user-title::after {
   content: " ";
   display: inline-block;
   vertical-align: middle;
@@ -216,7 +219,13 @@ img {
   border: none;
 }
 
-.footer__email {
+.footer__user-connect {
+  display:flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+.footer__input-email {
   padding: 10px 10px;
   width: 298px;
 
@@ -224,22 +233,42 @@ img {
 
   background-color: #666666;
   border:none;
+  outline: none;
+  border: 1px solid transparent; 
 }
 
-.footer__email:hover {
-  border: 1px solid #FFFFFF; 
+.footer__input-email:hover {
+  border-color: #FFFFFF; 
 }
 
-.footer__email:focus {
+.footer__input-email:focus {
   background-color: #FFFFFF;
   color: #000000;
 }
-
-.footer__user-connect {
-  display:flex;
-  flex-direction: column;
-  width: 380px;
+.footer__input-email::placeholder {
+  color: #FFFFFF;
 }
+
+/* КНОПКА */
+.footer__button-join {
+  width: 81px; 
+  padding: 11px 22px;
+
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer__button-join:hover{
+  background: #C29974;
+}
+
+.footer__button-join:active{
+  background: #CFAF91;
+} 
 
 .footer__social-item {
   padding-right: 10px;
@@ -249,7 +278,7 @@ img {
   opacity: 0.5;
 }
 
-.footer__additional:before {
+.footer__additional::before {
   content: " ";
   display: inline-block;
   vertical-align: middle;
@@ -284,84 +313,43 @@ img {
   padding-top: 7px;
 }
 
-.footer__success {
-  padding-top: 8px;
-}
-
-.footer__success-title {
-  margin: 0px;
-}
-
 .footer__success-title_hover {
   color: #C29974;
 }
 
 .footer__success-list {
-  display:flex;
-  margin:0px;
   padding-left: 25px;
-}
-
-.footer__success-item {
-  padding-right: 3px;
-  align-items: center;
-}
-
-/* КНОПКА */
-.footer__button-join {
-  width: 81px; 
-  padding: 9px 22px;
-
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #000000;
-  border: none;
-  cursor: pointer;
-}
-
-/* .footer__button-join:hover{
-  background: #C29974;
-}
-
-.footer__button-join:active{
-  background: #CFAF91;
-} */
-
-.footer__lable-star {
-  display: block;
-  position: relative;
-  width: 17px;
-  height: 17px; 
-  margin: 0 auto;
-
-  background-color: #434343;
-  border: none;
 }
 
 .footer__input-star {
   display: none;
 } 
 
-.footer__input-star + .star {
-  position: absolute;
-  left: 0px; 
-  top:4px;
-  width: 100%;
-  height: 100%;
-  background: url(images/star.png) no-repeat;
-  background-color: #434343;
+.footer__success-list:not(:checked) > label {
+  float: right;
+	width: 15px;
+  padding: 0;
+  margin-left: 5px;
+  margin-top: 18px;
+	cursor: pointer;
+}
+
+.rating-area:not(:checked) > label:before {
+  content:url("/images/star.png");
   cursor: pointer;
-  border: none;
 }
 
-.footer__input-star:hover + .star {
-  background: url(images/star-hover.png) no-repeat;
-  background-color: #434343;
+.footer__success-list > input:hover ~ label {
+  content:url("/images/star-hover.png");
+  margin-top: 20px;
+  margin-left: 5px;
+	cursor: pointer;
 }
 
-.footer__input-star:checked + .star {
-  background: url(images/star-focus.png) no-repeat;
-  background-color: #434343;
+.footer__success-list > input:checked ~ label {
+  content:url("/images/star-focus.png");
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .footer__link:hover {

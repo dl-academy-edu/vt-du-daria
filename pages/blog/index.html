@@ -19,6 +19,7 @@
           <ul class="header__nav-list">
             <li><span class="header__nav-item">BLOG</span></li>
             <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
+            <li><a class="header__nav-item" href="/pages/toys/index.html">TOYS</a></li>
             <li><a class="header__nav-item" href="#">ABOUT US</a></li>
           </ul>
           <ul class="header__nav-list_links">
@@ -30,17 +31,20 @@
     </header>
     
     <main class="main container-back">
-      <h2 class="title container">BLOG</h2>
+      <h1 class="title container">BLOG</h1>
+
       <div class="breadcrumbs container">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
+        <img class="breadcrumbs__img" src="/../../images/vector.png" alt="vector">
         <span class="breadcrumbs__current-page">Blog</span>
       </div>
 
       <section class="announce container">
+        <h2 class="hidden">announce</h2>
         <ul class="announce__list">
           <li class="announce__list-item">
             <a class="announce__link" href="#">
-              <img src="/../../images/top_5.jpg" alt="top 5 fastest growing it service companies in philly" class="announce__link-bg">
+              <img class="announce__link-bg" src="/../../images/top_5.jpg" alt="top 5 fastest growing it service companies in philly">
               <span class="announce__date">23rd August 2018</span> 
               <h2 class="announce__title">Top 5 fastest growing it service companies in philly</h2>
               <p class="announce__text">
@@ -109,10 +113,10 @@
         </ul>
 
         <div class="announce__pages">
+          <a href="#" class="announce__link-pages_prev">
+            <img class="announce__img-prev" src="/../../images/next-prev-pages.png" alt="vector">
+          </a>
           <ul class="announce__pages-list">
-            <li class="announce__pages-item">
-              <a href="#" class="announce__link-pages_prev"></a>
-            </li>
             <li class="announce__pages-item">
               <a href="#" class="announce__link-pages_1">1</a>
             </li>
@@ -120,15 +124,15 @@
               <a href="#" class="announce__link-pages_2">2</a>
             </li>
             <li class="announce__pages-item">
-              <a href="#" class="announce__lonk-pages_3">3</a>
+              <a href="#" class="announce__link-pages_3">3</a>
             </li>
             <li class="announce__pages-item">
               <a href="#" class="announce__link-pages_4">4</a>
             </li>
-            <li class="announce__pages-item">
-              <a href="#" class="announce__link-pages_next"></a>
-            </li>
           </ul>
+          <a href="#" class="announce__link-pages_next">
+            <img class="announce__img-next" src="/../../images/next-prev-pages.png" alt="vector">
+          </a>
         </div>
       </section>
     </main>
@@ -163,7 +167,7 @@
           <p class="footer__user-title">Connect</p>
 
           <form action="URL">
-            <input class="footer__email" type="email" name="email" placeholder="Email"><!--
+            <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
           --><button  class ="footer__button-join" type="submit" value="join">JOIN</button>
           </form>
 
@@ -189,38 +193,28 @@
       <div class="footer__additional">
         <form class="footer__success"> 
           <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
-          <ul class="footer__success-list footer__success-list_js">
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="#" value="one-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="two-star" value="two-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="three-star" value="three-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="four-star" value="four-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="five-star" value="five-star">
-                <span class="star"></span>
-              </label>
-            </li>
-          </ul>
+          <div class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+            <label class="footer__lable-star" for="star-5" title="Оценка «5»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <label class="footer__lable-star" for="star-4" title="Оценка «4»">
+              <img class="star" src="/images/star.png" alt="star" >
+            </label> 
+            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            <label class="footer__lable-star" for="star-3" title="Оценка «3»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <label class="footer__lable-star" for="star-2" title="Оценка «2»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <label class="footer__lable-star" for="star-1" title="Оценка «1»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+          </div>
         </form> 
 
         <div class="footer__copyr">

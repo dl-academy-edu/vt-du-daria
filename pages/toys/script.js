@@ -4,10 +4,10 @@ var delColor = document.querySelector(".footer__success-title_js");
 
 delColor.classList.remove("footer__success-title_hover");
 
-colorTitle.addEventListener("mouseover", function(){
+colorTitle.addEventListener("mouseenter", function(){
   addColor.classList.add("footer__success-title_hover");
 });
 
-colorTitle.addEventListener("mouseout", function(){
+colorTitle.addEventListener("mouseleave", function(){
   delColor.classList.remove("footer__success-title_hover");
 });

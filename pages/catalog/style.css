@@ -1,9 +1,12 @@
-.goods__list-item  {
+.goods__list-item,
+.goods__hidden  {
   list-style-type: none;
 }
 
-/* slider */
-.title{
+.title {
+  padding-bottom: 4px;
+  padding-top: 22px;
+
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -12,6 +15,11 @@
 }
 
 .breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-weight: normal;
@@ -19,12 +27,101 @@
   line-height: 25px;
 }
 
-.breadcrumbs__link{
-  color: #1E0606;
+.breadcrumbs_img {
+  height: 12px;
+  width: 8px;
 }
 
-/* goods */
-.goods__link-title {
+.breadcrumbs__link {
+  color: #1E0606;
+  padding-right: 20px;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.75;
+}
+
+.breadcrumbs__current-page {
+  padding-left: 20px;
+  opacity: 0.5;
+}
+
+/* goods ***********************************/
+.goods {
+  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+}
+
+.goods__list-item {
+  margin-top: 27px;
+  margin-right: 20px;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goods__list-item_1 {
+  margin-left: 20px;
+  background-image: url(/images/kids.png);
+  background-color: #DBE4DB;
+}
+
+.goods__list-item_2 {
+  background-image: url(/images/holiday.png);
+  background-color: rgba(186, 142, 107, 0.3);
+}
+
+.goods__list-item_3 {
+  background-image: url(/images/toys.png);
+  background-color: #F8F2DA;
+}
+
+@media screen and (max-width: 1000px) {
+  .goods__list-item_3 {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}
+
+.goods__list-item_4 {
+  margin-left: 218px;
+  background-image: url(/images/accesseories.png);
+  background-color: rgba(9, 3, 79, 0.17);
+}
+
+@media screen and (max-width: 1000px) {
+  .goods__list-item_4 {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}
+
+.goods__list-item_5 {
+  background-image: url(/images/sale.png);
+  background-color: rgba(207, 68, 111, 0.25);
+}
+
+.goods__list-item_6 {
+  margin-right: 10px;
+  background-image: url(/images/adults.png);
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.goods__link {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  width: 280px;
+
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -32,51 +129,46 @@
   line-height: 32px;
   color: #FFFFFF;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  text-align: center;
 }
 
-.goods__link-grey {
-  background-image: url("/../../images/kids.png");
-  background-blend-mode: multiply;
-  background: #DBE4DB;
-  background-repeat: no-repeat;
+.goods__link-title {
+  display: block;
+  width: 160px; 
+  margin: 0 auto;
 }
 
-.goods__link-pale_pink {
-  background-image: url("/../../images/holiday.png");
-  background-blend-mode: multiply;
-  background: rgba(186, 142, 107, 0.3);
-  background-repeat: no-repeat;
+.goods__link-title:hover {
+  text-decoration: underline;
 }
 
-.goods__link-beige {
-  background-image: url("/../../images/toys.png");
-  background-blend-mode: multiply;
-  background: #F8F2DA;
-  background-repeat: no-repeat;
+/*additional-inform**********************/
+.additional-inform {
+  margin-left: 290px;
+  width: 720px;
+  padding: 0 20px;
+  padding-bottom: 65px;
 }
 
-.goods__link-violet {
-  background-image: url("/../../images/accesseories.png");
-  background-blend-mode: multiply;
-  background: rgba(9, 3, 79, 0.17);
-  background-repeat: no-repeat;
-}
+@media screen and (max-width: 1000px) {
+  .additional-inform {
+    margin-left: auto;
+    width: auto;
+    padding-bottom: 65px;
+  }
 
-.goods__link-pink {
-  background-image: url("/../../images/sale.png");
-  background-blend-mode: multiply;
-  background: rgba(207, 68, 111, 0.25);
-  background-repeat: no-repeat;
-}
-
-.goods__link-blue {
-  background-image: url("/../../images/adults.png");
-  background-blend-mode: multiply;
-  background: rgba(125, 151, 218, 0.2);
-  background-repeat: no-repeat;
+  .additional-inform__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
 }
 
 .additional-inform__title {
+  margin: 0px;
+  padding-top: 39px;
+
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -85,8 +177,14 @@
 }
 
 .additional-inform__content {
+  padding-top: 5px;
+
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
+}
+
+.additional-inform__text {
+  margin-bottom: 0px;
 }

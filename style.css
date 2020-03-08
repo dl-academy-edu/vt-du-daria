@@ -3,7 +3,7 @@
   list-style-type: none;
 }
 
-/*slider************************/
+/*slider ******************************/
 .slider {
   display: flex;
   flex-direction: column;
@@ -53,20 +53,29 @@
   cursor: pointer;
 }
 
-.active {
+/* .active {
   background: rgba(75, 71, 71, 0.6);
   border: none;
-}
+} */
 
 .slider__nav-button:active {
   background: rgba(30, 6, 6, 0.6);
   border: none;
+  outline: none;
 }
 
 .slider__nav-button:hover {
   background: rgba(30, 6, 6, 0.6);
   border: none;
+  outline: none;
 }
+
+.slider__nav-button:focus {
+  background: rgba(30, 6, 6, 0.6);
+  border: none;
+  outline: none;
+}
+
 
 .slider__header-title {
   display: flex;
@@ -154,10 +163,8 @@
   background: #C29974;
 }
 
-/* goods ************************/
+/* goods ******************************/
 .goods {
-  display: flex;
-  flex-direction: column;
   padding-top: 90px;
   padding-bottom: 88px;
 }
@@ -180,14 +187,10 @@
   justify-content: space-between;
   width: 100%;
   margin: 0;
+  padding-left: 0px
 }
 
 .goods__list-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 270px;
-  width: 280px;
   margin-top: 30px;
 
   background-repeat: no-repeat;
@@ -215,9 +218,10 @@
 }
 
 .goods__link {
-  width: 160px;
-  margin: 0 auto;
-  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  width: 280px;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -227,6 +231,12 @@
   color: #FFFFFF;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
   text-align: center;
+}
+
+.goods__link-title {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
 }
 
 .goods__link-title:hover {
@@ -257,6 +267,9 @@
   cursor: pointer;
   border: none;
 }
+.goods__slider-prev:hover {
+  opacity: 0.75;
+}
 
 .goods__slider-next {
   align-items: center;
@@ -267,6 +280,10 @@
   background: rgba(112, 187, 220, 0.2);
   border: none;
   cursor: pointer;
+}
+
+.goods__slider-next:hover {
+  opacity: 0.75;
 }
 
 .goods__slider-content {
@@ -392,6 +409,10 @@
   padding: 0px;
 }
 
+.partners__list-item:hover {
+  opacity: 0.75;
+}
+
 .partners__list-item_1 {
   height:60px;
   width: 193px;
@@ -416,12 +437,12 @@
   margin-bottom: 10px;
 }
 
-/*About Us****************************/
+/*About Us ******************************/
 .about-us {
   display: flex;
   flex-wrap: wrap;
   padding-top: 38px;
-  padding-bottom: 46px;
+  padding-bottom: 44px;
 }
 
 .about-us__block-inform-1 {
@@ -479,6 +500,10 @@
   border: none;
 
   cursor: pointer;
+}
+
+.about-us__inform-1-button:hover {
+  opacity: 0.75;
 }
 
 /* КНОПКА */
@@ -553,7 +578,7 @@
   height: 196px;
 }
 
-/*modal-window*****************************/
+/*modal-window ******************************/
 .modal-bg {
   position: fixed; 
   top: 0;
@@ -610,6 +635,64 @@ textarea {
   overflow: scroll;
 } 
 
+fieldset {
+  border: none;
+}
+
+.modal-window__input {
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 3px solid transparent; 
+}
+
+.modal-window__input:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-window__label {
+  margin-bottom: 6px;
+}
+
+.modal-window__accept {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; 
+}
+
+.modal-window__accept-lable {
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+  cursor: pointer;
+}
+
+.modal-window__accept-checkbox-click {
+  position: relative;
+  display: flex;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+
+  width: 19px;
+  height: 19px;
+}
+
+.modal-window__accept-checkbox:focus + .modal-window__accept-checkbox-click {
+  border: 2px solid rgb(141, 113, 90)
+}
+
+.modal-window__accept-checkbox:checked + .modal-window__accept-checkbox-click::before {
+  content: url("images/accept.png");
+  margin: auto;
+
+  width: 14px;
+  height: 14px;
+}
+
+.modal-window__text {
+  margin-left: 8px;
+}
+
 /*кнопка*/
 .modal-window__button-submit {
   display: flex;
@@ -632,60 +715,8 @@ textarea {
 }
 
 .modal-window__button-submit:hover {
-  opacity: 0.8;
+  opacity: 0.75;
 }
-
-fieldset {
-  border: none;
-}
-
-.modal-window__input {
-  padding: 17px 20px;
-  margin-bottom: 20px;
-}
-
-.modal-window__input:hover {
-  border: 3px solid rgba(0, 0, 0, 0.2);
-}
-
-.modal-window__label {
-  margin-bottom: 6px;
-}
-
-.modal-window__accept {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 20px; 
-}
-
-.user-input__checkbox {
-  display: none;
-}
-
-.user-input__checkbox + .user-click {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  margin: 0;
-  margin-left: 0px;
-  margin-right: 15px;
-  vertical-align: middle;
-  background:url(/images/checkbox.png) no-repeat;
-  background-color: #E5EAF8;
-  cursor:pointer;
-}
-
-.user-input__checkbox:checked + .user-click {
-  background:url(/images/checkbox-accept.png) no-repeat;
-  background-color: #E5EAF8;
-}
-
-.user-input__checkbox:focus + .user-click {
-  border: 2px;
-  background:url(/images/checkbox-accept.png) no-repeat;
-  background-color: #E5EAF8;
-}
-
 .modal-window__button_to_close {
   position: absolute;
   top: 0px;

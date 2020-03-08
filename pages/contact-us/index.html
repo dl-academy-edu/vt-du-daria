@@ -17,8 +17,9 @@
         </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li><a class="header__nav-item" href=/pages/blog/index.html>BLOG</a></li>
+            <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
             <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
+            <li><a class="header__nav-item" href="/pages/toys/index.html">TOYS</a></li>
             <li><span class="header__nav-item">ABOUT US</span></li>
           </ul>
           <ul class="header__nav-list_links">
@@ -33,35 +34,47 @@
       <h1 class="title container">CONTACT US</h1>
       <div class="breadcrumbs container">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
+        <img class="breadcrumbs_img" src="/../../images/vector.png" alt="vector">
         <span class="breadcrumbs__current-page">Contact Us</span>
       </div>
 
       <section class="contact container">
-        <h2 class="hidden">Contact</h2>
-        <form class="contact__form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-          <label class="contact__label" for="user-name">Name</label>
-          <input class="contact__input" id="user-name" type="text" name="name" placeholder="Ivan Ivanov">
+        <h2 class="hidden">contact</h2>
+        <div class="contact-bg">
+          <form class="contact-window " action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <label class="contact-window__label" for="user-name"> Name</label>
+            <input class="contact-window__input" id="user-name" type="text" name="name">
+            
+            <div class="contact-window__user">
+              <div class="contact-window__user-inf">
+                <label class="contact-window__label" for="user-phone">Phone</label>
+                <input class="contact-window__input" id="user-phone" type="text" name="phone">
+              </div>
+    
+              <div class="contact-window__user-inf">
+                <label class="contact-window__label" for="user-email">Email</label>
+                <input class="contact-window__input" id="user-email" type="email" name="email">
+              </div>
+            </div>
+            
+            <label class="contact-window__label" for="user-message">Message</label>
+            <textarea class="contact-window__input" id="user-message" name="message"></textarea>
 
-          <label class="contact__label" for="user-phone">Phone</label>
-          <input class="contact__input" id="user-phone" type="text" name="phone">
-
-          <label class="contact__label" for="user-email">Email</label>
-          <input class="contact__input" id="user-email" type="email" name="email">
-
-          <label class="contact__label" for="user-message">Message</label>
-          <textarea class="contact__input" id="user-message" name="message"></textarea>
-
-          <fieldset class="contact__accept">
-            <input type="checkbox" id="user-accept" name="accept" value="accept">
-            By click on the button, you concent to the processing of you personal data
-          </fieldset>
-
-          <button class="contact__button-submit" type="submit">SUBMIT</button>
-        </form>
-
+            <fieldset class="contact-window__accept">
+              <label class="contact-window__accept-lable">
+                <input class="contact-window__accept-checkbox hidden" type="checkbox" name="accept" value="accept">
+                <span class="contact-window__accept-checkbox-click"></span>
+                <span class="contact-window__text">By click on the button, you concent to the processing of you personal data</span>
+              </label>
+            </fieldset>
+      
+            <button class="contact-window__button-submit" type="submit" value="submit">SUBMIT</button>
+          </form>
+        </div>
+        
         <div class="contact__additional-inform">
-          <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-          <p>Please use the form to contact us with your needs. Send us a message and we'll respond
+          <p class="contact__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p class="contact__text">Please use the form to contact us with your needs. Send us a message and we'll respond
             as soon as possible.</p>
           <a href="#" class="contact__additional-inform__link">An expert is wating to help you!</a>
         </div>
@@ -98,7 +111,7 @@
           <p class="footer__user-title">Connect</p>
 
           <form action="URL">
-            <input class="footer__email" type="email" name="email" placeholder="Email"><!--
+            <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
           --><button  class ="footer__button-join" type="submit" value="join">JOIN</button>
           </form>
 
@@ -124,38 +137,28 @@
       <div class="footer__additional">
         <form class="footer__success"> 
           <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
-          <ul class="footer__success-list footer__success-list_js">
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="#" value="one-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="two-star" value="two-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="three-star" value="three-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="four-star" value="four-star">
-                <span class="star"></span>
-              </label>
-            </li>
-            <li class="footer__success-item">
-              <label class="footer__lable-star">
-                <input class="footer__input-star" type="checkbox" name="five-star" value="five-star">
-                <span class="star"></span>
-              </label>
-            </li>
-          </ul>
+          <div class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+            <label class="footer__lable-star" for="star-5" title="Оценка «5»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <label class="footer__lable-star" for="star-4" title="Оценка «4»">
+              <img class="star" src="/images/star.png" alt="star" >
+            </label> 
+            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            <label class="footer__lable-star" for="star-3" title="Оценка «3»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <label class="footer__lable-star" for="star-2" title="Оценка «2»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <label class="footer__lable-star" for="star-1" title="Оценка «1»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+          </div>
         </form> 
 
         <div class="footer__copyr">
@@ -167,5 +170,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-	</body>
+  </body>
 </html>
