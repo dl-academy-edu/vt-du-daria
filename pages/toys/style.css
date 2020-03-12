@@ -3,49 +3,18 @@
   list-style-type: none;
 }
 
+.header__img-logo:hover {
+  opacity: 0.5;
+}
+
 .title {
   padding-bottom: 4px;
   padding-top: 22px;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
-}
-
-/* breadcrumbs **********************************/
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  padding-top: 8px;
-  padding-bottom: 52px;
-
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.breadcrumbs__img {
-  height: 12px;
-  width: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
-  
-}
-
-.breadcrumbs__link {
-  color: #1E0606;
-}
-
-.breadcrumbs__link:hover {
-  opacity: 0.75;
-}
-
-.breadcrumbs__current-page {
-  opacity: 0.5;
 }
 
 /* seliction form *************************/
@@ -58,10 +27,8 @@ fieldset {
 }
 
 .selection {
-  padding: 0 110px;
-  padding-top: 42px;
-  padding-bottom: 25px;
-  
+  padding: 42px 110px 25px;
+  margin-top: 44px;
   background: rgba(125, 151, 218, 0.2);
 }
 
@@ -72,10 +39,9 @@ fieldset {
 .selection__bar {
   display: flex;
   flex-wrap: wrap;
-
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal; */
   font-size: 16px;
   line-height: 22px;
 }
@@ -105,26 +71,13 @@ fieldset {
 
 .selection__cost-input-range::-webkit-slider-thumb {
   -webkit-appearance: none;
-
-  width:24px;
-  height:24px;
-  background:#FFFFFF;
-  border-radius:24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
   border: 7px solid #C29974;
-  cursor:pointer;
+  cursor: pointer;
   transition:.100s;
-
   background: #7F7F7F;
-}
-
-.cost-range {
-  margin: 0px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  width: 206px;
-
-  font-weight: bold;
-  color: #C29974;
 }
 
 .selection__cost-range {
@@ -152,8 +105,7 @@ fieldset {
 
 .selection__list {
   margin: 0;
-  padding: 0;
-  padding-top: 15px;
+  padding: 15px 0 0;
 }
 
 .selection__list-etem {
@@ -170,11 +122,10 @@ fieldset {
 .selection__click {
   position: relative;
   display: flex;
-  border: 2px solid #C29974;
-  border-radius: 3px;
-
   width: 19px;
   height: 19px;
+  border: 2px solid #C29974;
+  border-radius: 3px;
 }
 
 .selection__input:focus + .selection__click {
@@ -183,11 +134,14 @@ fieldset {
 
 .selection__input:checked + .selection__click::before {
   content: url("/images/accept.png");
-  margin: auto;
-
   width: 14px;
   height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #FFFFFF;
+  border-radius: 2px;
 }
 
 .selection__text {
@@ -195,13 +149,12 @@ fieldset {
 }
 
 .selection__click-user {
-  position: relative;
   display: flex;
-  border: 3px solid #C29974;
-  border-radius: 100%;
-
+  position: relative;
   width: 20px;
   height: 20px;
+  border: 3px solid #C29974;
+  border-radius: 100%;
 }
 
 .selection__input-user:focus + .selection__click-user {
@@ -210,16 +163,12 @@ fieldset {
 
 .selection__input-user:checked + .selection__click-user::before {
   content:"";
-
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   width: 12px;
   height: 12px;
-
   background-color:  #C29974;
   border-radius: 100%;
 }
@@ -250,18 +199,23 @@ fieldset {
   cursor: pointer;
 }
 
-.selection__input-range:checked + .amount-range {
+.range {
+  margin-right: 0;
+}
+
+.selection__label .active {
   background-color: #F3D0DB;
-  border: 2px solid rgb(141, 113, 90);
 }
 
 .selection__input-range:hover + .amount-range {
   background-color: #EDDEEB;
 }
+.selection__input-range:active + .amount-range {
+  background-color: #F3D0DB;
+}
 
 .selection__input-range:focus + .amount-range {
   background-color: #F3D0DB;
-  border: 2px solid rgb(141, 113, 90);
 }
 
 /* selection__button-submit */
@@ -270,12 +224,10 @@ fieldset {
   width: 95px;
   margin-top: 35px;
   margin-left: 50px;
-
   font-weight: bold;
   color: #FFFFFF;
   background: #000000;
   border: none;
-
   cursor: pointer;
 }
 
@@ -315,9 +267,9 @@ fieldset {
 }
 
 .goods__link-title {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal; */
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
@@ -328,27 +280,27 @@ fieldset {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  display: block;
+  display: flex;
   width: 207px;
   height: 207px;
-  padding-top: 90px;
-
+  align-items: center;
+  justify-content: center;
   content: "LEAN MORE";
   color: #000000;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-
   background-color: #E5EAF8;;
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.goods__link:active > .goods__hover::before {
+  opacity: 0.67;
 }
 
 .goods__price {
   padding-top: 17px;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -368,7 +320,6 @@ fieldset {
 .goods__pages {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 43px; 
   align-items: center;
   padding-top: 23px;
   padding-bottom: 55px;
@@ -380,7 +331,6 @@ fieldset {
   margin: auto;
   padding-left: 0px;
   justify-content: space-between;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -389,43 +339,37 @@ fieldset {
   color: #1E0606;
 }
 
-.goods__link-pages_1,
-.goods__link-pages_2,
-.goods__link-pages_3,
-.goods__link-pages_4 {
+.page {
   color: #1E0606;
 }
 
-.goods__link-pages_1:hover,
-.goods__link-pages_2:hover,
-.goods__link-pages_3:hover,
-.goods__link-pages_4:hover {
+.page:hover {
   color: #C29974;
 }
 
-.goods__link-pages_prev {
+.pages_prev {
   background-image: url("/../../images/next-prev-pages.png");
   background-repeat: no-repeat;
   transform: rotate(-180deg);
 }
 
-.goods__link-pages_prev:hover {
+.pages_prev:hover {
   background-image: url("/../../images/next-prev-hov.png");
   background-repeat: no-repeat;
   transform: rotate(-180deg);
 }
 
-.goods__link-pages_next {
+.pages_next {
   background-image: url("/../../images/next-prev-pages.png");
   background-repeat: no-repeat;
 }
 
-.goods__link-pages_next:hover {
+.pages_next:hover {
   background-image: url("/../../images/next-prev-hov.png");
   background-repeat: no-repeat;
 }
 
-.goods__link-pages_prev:active,
-.goods__link-pages_next:active {
+.pages_prev:active,
+.pages_next:active {
   opacity: 0.5;
 }

@@ -59,15 +59,8 @@ img {
 }
 
 .header__logo {
-  display: flex; 
-  flex-wrap: wrap;
-  align-items: center;
   min-width: 100px;
   height: 52px;
-}
-
-.header__img-logo:hover {
-  opacity: 0.5;
 }
 
 .header__nav {
@@ -97,7 +90,6 @@ img {
 
 .header__nav-item {
   padding-right: 20px;
-
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
@@ -120,19 +112,49 @@ img {
   opacity: 0.5;
 }
 
+/* breadcrumbs ***************************/
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.breadcrumbs__img {
+  height: 12px;
+  width: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.breadcrumbs__link {
+  color: #1E0606;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.75;
+}
+
+.breadcrumbs__current-page {
+  opacity: 0.5;
+}
+
 /* footer **************************/
 .footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-
   background: #434343;
 }
 
@@ -149,21 +171,18 @@ img {
   list-style-type: none;
 }
 
-.footer__nav-title,
-.footer__user-title,
+.footer__titles,
 .footer__link {
   color: #AAAAAA;
 }
 
 .footer__nav-item,
-.footer__success-title,
-.footer__success-list,
+.footer__success, 
 .footer__copyr {
   color: #FFFFFF;
 }
 
-.footer__nav-title,
-.footer__user-title,
+.footer__titles,
 .footer__nav {
   padding: 0px;
   margin: 0px;
@@ -178,7 +197,7 @@ img {
   margin: 0px;
 }
 
-.footer__nav-list:before {
+.footer__titles::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -186,7 +205,6 @@ img {
   height: 1px;
   margin-top: 23px;
   margin-bottom: 28px;
-
   background-color: #666666;
   border: none;
 }
@@ -194,7 +212,6 @@ img {
 .footer__nav-item {
   display: block;
   margin-bottom: 16px;
-
   background-color: #434343;
 }
 
@@ -206,19 +223,6 @@ img {
   opacity: 0.2;
 }
 
-.footer__user-title::after {
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 23px;
-  margin-bottom: 27px;
-  width: 100%;
-  height: 1px;
-
-  background-color: #666666;
-  border: none;
-}
-
 .footer__user-connect {
   display:flex;
   flex-direction: column;
@@ -228,11 +232,8 @@ img {
 .footer__input-email {
   padding: 10px 10px;
   width: 298px;
-
   color: #FFFFFF;
-
   background-color: #666666;
-  border:none;
   outline: none;
   border: 1px solid transparent; 
 }
@@ -253,7 +254,6 @@ img {
 .footer__button-join {
   width: 81px; 
   padding: 11px 22px;
-
   font-weight: bold;
   color: #FFFFFF;
   background-color: #000000;
@@ -270,6 +270,12 @@ img {
   background: #CFAF91;
 } 
 
+.footer__social-list {
+  display:flex;
+  padding: 25px 0 0;
+  margin: 0px;
+}
+
 .footer__social-item {
   padding-right: 10px;
 }
@@ -284,7 +290,6 @@ img {
   vertical-align: middle;
   width: 100%;
   height: 1px;
-
   background-color: #666666;
   border: none;
 }
@@ -294,31 +299,23 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 110px;
-  padding-bottom: 100px;
-}
-
-.footer__social-list {
-  display:flex;
-  padding: 0px;
-  padding-top:25px;
-  margin: 0px;
+  padding: 0 110px 100px;
 }
 
 .footer__web-design,
 .footer__copyr,
 .footer__success {
-  display:flex;
+  display: flex;
   width: 380px;
   padding-top: 7px;
 }
 
-.footer__success-title_hover {
-  color: #C29974;
-}
-
 .footer__success-list {
-  padding-left: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 245px;
+  float: left;
 }
 
 .footer__input-star {
@@ -326,11 +323,7 @@ img {
 } 
 
 .footer__success-list:not(:checked) > label {
-  float: right;
-	width: 15px;
-  padding: 0;
   margin-left: 5px;
-  margin-top: 18px;
 	cursor: pointer;
 }
 
@@ -341,18 +334,29 @@ img {
 
 .footer__success-list > input:hover ~ label {
   content:url("/images/star-hover.png");
-  margin-top: 20px;
-  margin-left: 5px;
-	cursor: pointer;
+  margin-bottom: 1.55px;
+  cursor: pointer;
 }
 
 .footer__success-list > input:checked ~ label {
   content:url("/images/star-focus.png");
-  margin-top: 20px;
-  margin-left: 5px;
+  margin-bottom: 1.55px;
+  cursor: pointer;
 }
 
 .footer__link:hover {
   text-decoration: underline;
   color: #FFFFFF;
+}
+
+.footer__success-list input:checked ~ p {
+  color: #C29974;
+}
+
+.footer__success-list label:hover ~ p {
+  color: #C29974;
+}
+
+.footer__success-title {
+  margin-right: 27px;
 }

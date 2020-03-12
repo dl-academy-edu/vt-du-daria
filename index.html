@@ -12,7 +12,7 @@
 	<body>
     <header class="header-main container-back">
       <div class="header container">
-        <a class="header__logo" href="/index.html">
+        <a class="header__logo" href="#">
           <img class="header__img-logo" src="/images/logo.png" alt="logo">
         </a>
         <nav class="header__nav">
@@ -44,7 +44,7 @@
           <div class="slider__header-title">
             <h2 class="slider__title">THE OOH NOO COLLECTION</h2>
             <p class="slider__text">Designed in Slovenia</p>
-            <a class="slider__link slider__link_js" href="#">Explore now</a>
+            <a class="slider__link slider__link_js" href="#">EXPLORE NOW</a>
           </div>
   
           <img class="slider__link-bg" src="/images/monster.png" alt="monster in a wheelbarrow">
@@ -57,28 +57,24 @@
       <section class="goods container">
         <h2 class="goods__title">CATEGORY PRODUCTS</h2>
         <ul class="goods__list">
-          <li class="goods__list-item goods__list-item_1">
-            <a class="goods__link" href="/pages/catalog/index.html">
+          <li class="goods__list-item">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/kids.png); background-color: #DBE4DB;">
               <span class="goods__link-title">APPAREL KIDS</span>
-              <!-- <img src="/images/kids.png" alt="APPAREL KIDS" class="goods__link-grey"> -->
             </a>
           </li>
-          <li class="goods__list-item goods__list-item_2">
-            <a class="goods__link" href="/pages/catalog/index.html">
+          <li class="goods__list-item">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/holiday.png); background-color: rgba(186, 142, 107, 0.3);">
               <span class="goods__link-title">HOLIDAY SHOP</span>
-              <!-- <img src="/images/holiday.png" alt="HOLIDAY SHOP" class="goods__link-bg"> -->
             </a>
           </li>
-          <li class="goods__list-item goods__list-item_3">
-            <a class="goods__link" href="/pages/toys/index.html">
+          <li class="goods__list-item">
+            <a class="goods__link" href="/pages/toys/index.html" style="background-image: url(/images/toys.png); background-color: #F8F2DA;">
               <span class="goods__link-title">TOYS</span>
-              <!-- <img src="/images/toys.png" alt="TOYS" class="goods__link-beige"> -->
             </a>
           </li>
-          <li class="goods__list-item goods__list-item_4">
-            <a class="goods__link" href="/pages/catalog/index.html">
+          <li class="goods__list-item">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/accesseories.png); background-color: rgba(9, 3, 79, 0.17);">
               <span class="goods__link-title">ACCESSORIES</span>
-              <!-- <img src="/images/accesseories.png" alt="ACCESSORIES" class="goods__link-violet"> -->
             </a>
           </li>
         </ul>
@@ -106,9 +102,10 @@
             <h2 class="additional-inform__title">DELIVERY</h2>
   
             <div class="additional-inform__menu">
-              <button type="button" class="additional-inform__menu-item">Delivery</button>
+              <button type="button" class="additional-inform__menu-item active">Delivery</button>
               <button type="button" class="additional-inform__menu-item">Guarantee</button>
               <button type="button" class="additional-inform__menu-item">Credit</button>
+            
             </div>
   
             <div class="additional-inform__content">
@@ -124,36 +121,48 @@
       <section class="partners container">
         <h2 class="hidden">Partners</h2>
         <ul class="partners__list">
-          <li><a class="partners__list-item" href="#"><img class="partners__list-item_1" src="/images/mail.png" alt="mail"></a></li>
-          <li><a class="partners__list-item" href="#"><img class="partners__list-item_2" src="/images/apple.png" alt="apple"></a></li>
-          <li><a class="partners__list-item" href="#"><img class="partners__list-item_3" src="/images/eltex.png" alt="eltex"></a></li>
-          <li><a class="partners__list-item" href="#"><img class="partners__list-item_4" src="/images/owox.png" alt="owox"></a></li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/mail.png" alt="mail">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/apple.png" alt="apple">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/eltex.png" alt="eltex">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/owox.png" alt="owox">
+            </a>
+          </li>
         </ul>
       </section>
 
       <section class="about-us container">
-        <div class="about-us__block-inform-1">
-          <div class="about-us__inform-1">
-            <h3 class="about-us__inform-1-title">DESIGN LIFE KIDS</h3>
-            <button class="about-us__inform-1-button" type="button">About us</button>
-            <p class="about-us__inform-1-content">
-              Some days i feel like i've been working on dlk 
-              my entire life and there are other days that i am completely shocked
-              that four years have flown by. It's simply magical.
-            </p>
-            <a class="about-us__link" href="#">BY NOW</a>
-          </div>
+        <div class="about-us__block inform-1">
+          <h3 class="about-us__title">DESIGN LIFE KIDS</h3>
+          <button class="about-us__button" type="button">About Us</button>
+          <p class="about-us__text">
+            Some days i feel like i've been working on dlk 
+            my entire life and there are other days that i am completely shocked
+            that four years have flown by. It's simply magical.
+          </p>
+          <a class="about-us__link" href="#">BY NOW</a>
         </div>
 
-        <div class="about-us__block-inform-2">
-          <div class="about-us__inform-2">
-            <h3 class="about-us__inform-2-title">CONTACTS</h3>
-            <p class="about-us__inform-2-content">
-              Some days i feel like i've been working on dlk my entire life and 
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.</p>
-            <img class="about-us__img-bg" src="/images/map.jpg" alt="map">
-          </div>
+        <div class="about-us__block inform-2">
+          <h3 class="about-us__title">CONTACTS</h3>
+          <p class="about-us__text">
+            Some days i feel like i've been working on dlk my entire life and 
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.</p>
+          <img class="about-us__img-bg" src="/images/map.jpg" alt="map">
         </div>
       </section>
     </main>
@@ -161,7 +170,7 @@
     <footer class="footer container-back">
       <div class="footer__nav-connect">
         <div class="footer__nav">
-          <p class="footer__nav-title">Navigation</p>
+          <p class="footer__titles">Navigation</p>
           <ul class="footer__nav-list">
             <li><a class="footer__nav-item" href="#">About Us</a></li>
             <li><a class="footer__nav-item" href="/pages/blog/index.html">Blog</a></li>
@@ -173,7 +182,7 @@
         </div>
 
         <div class="footer__nav">
-          <p class="footer__nav-title">Customer Information</p>
+          <p class="footer__titles">Customer Information</p>
           <ul class="footer__nav-list">
             <li><a class="footer__nav-item" href="/pages/contact-us/index.html">Contact Us</a></li>
             <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
@@ -185,7 +194,7 @@
         </div>
 
         <div class="footer__user-connect">
-          <p class="footer__user-title">Connect</p>
+          <p class="footer__titles">Connect</p>
 
           <form action="URL">
             <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
@@ -212,9 +221,8 @@
       </div>
 
       <div class="footer__additional">
-        <form class="footer__success"> 
-          <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
-          <div class="footer__success-list footer__success-list_js">
+        <div class="footer__success"> 
+          <form class="footer__success-list footer__success-list_js">
             <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
             <label class="footer__lable-star" for="star-5" title="Оценка «5»">
               <img class="star" src="/images/star.png" alt="star">
@@ -235,8 +243,9 @@
             <label class="footer__lable-star" for="star-1" title="Оценка «1»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-          </div>
-        </form> 
+            <p class="footer__success-title">Company Rating</p>
+          </form>
+        </div> 
 
         <div class="footer__copyr">
           <p >Copyright &#169; 2018 Dlk • Design Life Kids</p>
@@ -276,7 +285,7 @@
         </fieldset>
   
         <button class="modal-window__button-submit" type="submit">SUBMIT</button>
-        <button class="modal-window__button_to_close modal-window__button_to_close_js" type="button" value="closed">X</button>
+        <button class="modal-window__button_to_close modal-window__button_to_close_js" type="button" value="closed"></button>
       </form>
     </div>
     <script src="script.js"></script>

@@ -25,12 +25,12 @@ window.addEventListener("keydown", function (event) {
 });
 
 // *************************************************
-delColor.classList.remove("footer__success-title_hover");
+// delColor.classList.remove("footer__success-title_hover");
 
-colorTitle.addEventListener("mouseenter", function(){
-  addColor.classList.add("footer__success-title_hover");
-});
+// colorTitle.addEventListener("mouseenter", function(){
+//   addColor.classList.add("footer__success-title_hover");
+// });
 
-colorTitle.addEventListener("mouseleave", function(){
-  delColor.classList.remove("footer__success-title_hover");
-});
+// colorTitle.addEventListener("mouseleave", function(){
+//   delColor.classList.remove("footer__success-title_hover");
+// });

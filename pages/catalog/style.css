@@ -3,10 +3,13 @@
   list-style-type: none;
 }
 
+.header__img-logo:hover {
+  opacity: 0.5;
+}
+
 .title {
   padding-bottom: 4px;
   padding-top: 22px;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -14,106 +17,35 @@
   line-height: 49px;
 }
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.breadcrumbs_img {
-  height: 12px;
-  width: 8px;
-}
-
-.breadcrumbs__link {
-  color: #1E0606;
-  padding-right: 20px;
-}
-
-.breadcrumbs__link:hover {
-  opacity: 0.75;
-}
-
-.breadcrumbs__current-page {
-  padding-left: 20px;
-  opacity: 0.5;
-}
-
 /* goods ***********************************/
 .goods {
-  padding: 0px;
-  padding-top: 15px;
-  padding-bottom: 13px;
+  padding: 15px 0 13px;
 }
 
 .goods__list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
+  margin: 0px;
   padding: 0px;
 }
 
 .goods__list-item {
-  margin-top: 27px;
-  margin-right: 20px;
-  
-  background-repeat: no-repeat;
-  background-position: center;
+  margin: 27px 20px 0;
 }
 
-.goods__list-item_1 {
-  margin-left: 20px;
-  background-image: url(/images/kids.png);
-  background-color: #DBE4DB;
+.goods__list-item:hover {
+  text-decoration: underline;
 }
 
-.goods__list-item_2 {
-  background-image: url(/images/holiday.png);
-  background-color: rgba(186, 142, 107, 0.3);
-}
-
-.goods__list-item_3 {
-  background-image: url(/images/toys.png);
-  background-color: #F8F2DA;
-}
-
-@media screen and (max-width: 1000px) {
-  .goods__list-item_3 {
-    margin-left: auto;
-    margin-right: 5px;
-  }
-}
-
-.goods__list-item_4 {
+.goods__list-item:nth-child(4) {
   margin-left: 218px;
-  background-image: url(/images/accesseories.png);
-  background-color: rgba(9, 3, 79, 0.17);
 }
 
 @media screen and (max-width: 1000px) {
-  .goods__list-item_4 {
-    margin-left: auto;
-    margin-right: 5px;
+  .goods__list-item:nth-child(4) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-}
-
-.goods__list-item_5 {
-  background-image: url(/images/sale.png);
-  background-color: rgba(207, 68, 111, 0.25);
-}
-
-.goods__list-item_6 {
-  margin-right: 10px;
-  background-image: url(/images/adults.png);
-  background-color: rgba(125, 151, 218, 0.2);
 }
 
 .goods__link {
@@ -121,7 +53,6 @@
   vertical-align: middle;
   height: 270px;
   width: 280px;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -130,6 +61,8 @@
   color: #FFFFFF;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .goods__link-title {
@@ -138,16 +71,11 @@
   margin: 0 auto;
 }
 
-.goods__link-title:hover {
-  text-decoration: underline;
-}
-
-/*additional-inform**********************/
+/*additional-inform************************/
 .additional-inform {
-  margin-left: 290px;
   width: 720px;
-  padding: 0 20px;
-  padding-bottom: 65px;
+  padding: 0 20px 65px;
+  margin-left: 290px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -168,7 +96,6 @@
 .additional-inform__title {
   margin: 0px;
   padding-top: 39px;
-
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -178,9 +105,9 @@
 
 .additional-inform__content {
   padding-top: 5px;
-
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-style: normal;
+  font-weight: normal; */
   font-size: 16px;
   line-height: 22px;
 }

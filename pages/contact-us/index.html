@@ -34,7 +34,7 @@
       <h1 class="title container">CONTACT US</h1>
       <div class="breadcrumbs container">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
-        <img class="breadcrumbs_img" src="/../../images/vector.png" alt="vector">
+        <img class="breadcrumbs__img" src="/../../images/vector.png" alt="vector">
         <span class="breadcrumbs__current-page">Contact Us</span>
       </div>
 
@@ -84,7 +84,7 @@
     <footer class="footer container-back">
       <div class="footer__nav-connect">
         <div class="footer__nav">
-          <p class="footer__nav-title">Navigation</p>
+          <p class="footer__titles">Navigation</p>
           <ul class="footer__nav-list">
             <li><a class="footer__nav-item" href="#">About Us</a></li>
             <li><a class="footer__nav-item" href="/../../pages/blog/index.html">Blog</a></li>
@@ -96,7 +96,7 @@
         </div>
 
         <div class="footer__nav">
-          <p class="footer__nav-title">Customer Information</p>
+          <p class="footer__titles">Customer Information</p>
           <ul class="footer__nav-list">
             <li><a class="footer__nav-item" href="#">Contact Us</a></li>
             <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
@@ -108,7 +108,7 @@
         </div>
 
         <div class="footer__user-connect">
-          <p class="footer__user-title">Connect</p>
+          <p class="footer__titles">Connect</p>
 
           <form action="URL">
             <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
@@ -135,9 +135,8 @@
       </div>
 
       <div class="footer__additional">
-        <form class="footer__success"> 
-          <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
-          <div class="footer__success-list footer__success-list_js">
+        <div class="footer__success"> 
+          <form class="footer__success-list">
             <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
             <label class="footer__lable-star" for="star-5" title="Оценка «5»">
               <img class="star" src="/images/star.png" alt="star">
@@ -158,8 +157,9 @@
             <label class="footer__lable-star" for="star-1" title="Оценка «1»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-          </div>
-        </form> 
+            <p class="footer__success-title">Company Rating</p>
+          </form>
+        </div> 
 
         <div class="footer__copyr">
           <p >Copyright &#169; 2018 Dlk • Design Life Kids</p>
@@ -169,6 +169,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
