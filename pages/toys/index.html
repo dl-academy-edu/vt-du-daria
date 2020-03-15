@@ -3,7 +3,7 @@
   <head>
 		<meta charset="UTF-8"/>
     <title>Toys / Designe Life Kids</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/../common.css">
     <link rel="stylesheet" href="style.css">
@@ -44,7 +44,7 @@
         <form class="selection__bar" action="#" method="POST">
           <fieldset class="selection__cost">
             <span class="selection__title">Cost</span>
-            <input class="selection__cost-input-range" id="range-user" type="range" name="cost" min="0" max="500" step="25" value="125">
+            <input class="selection__cost-input-range" id="range-user" type="range" name="cost" min="0" max="500" value="125">
             <div class="selection__cost-range">
               <span class="cost__range_0">0</span> 
               <span class="cost__range_500">500</span>
@@ -57,7 +57,7 @@
               <li class="selection__list-etem">
                 <label class="selection__label">
                   <input class="selection__input hidden" type="checkbox" name="color-black" value="black">
-                  <span class="selection__click"></span>
+                  <span class="selection__click active"></span>
                   <span class="selection__text">Black</span> 
                 </label>
               </li>
@@ -95,10 +95,10 @@
                   <span class="selection__text">Free shipping</span>
                 </label>
               </li>
-              <li class="selection__list-etem">   
+              <li class="selection__list-etem">
                 <label class="selection__label">
                   <input class="selection__input-user hidden" type="radio" name="shipping" value="fast">
-                  <span class="selection__click-user"></span>
+                  <span class="selection__click-user active"></span>
                   <span class="selection__text">Fast shipping</span>
                 </label>
               </li>
@@ -111,20 +111,19 @@
               <li class="selection__list-etem">
                 <label class="selection__label range">
                   <input class="selection__input-range hidden" type="radio" name="range" value="0-5">
-                  <span class ="amount-range active"><span class ="amount-text">0-5</span></span>
+                  <span class ="amount-range active">0-5</span>
                 </label>
               </li>
               <li class="selection__list-etem">
                 <label class="selection__label range">
                   <input class="selection__input-range hidden" type="radio" name="range" value="10-20">
-                  <span class="amount-range"><span class="amount-text">10-20</span></span>
-                  
+                  <span class="amount-range">10-20</span>
                 </label>
               </li>
               <li class="selection__list-etem">
                 <label class="selection__label range">
                   <input class="selection__input-range hidden" type="radio" name="range" value="20-50">
-                  <span class="amount-range"><span class="amount-text">20-50</span></span>
+                  <span class="amount-range">20-50</span>
                 </label>
               </li>
             </ul>
@@ -192,16 +191,16 @@
           </a>
           <ul class="goods__pages-list">
             <li class="goods__pages-item">
-              <a href="#" class="goods__link page" alt="page_one">1</a>
+              <a href="#" class="goods__link page active">1</a>
             </li>
             <li class="goods__pages-item">
-              <a href="#" class="goods__link page" alt="page_two">2</a>
+              <a href="#" class="goods__link page">2</a>
             </li>
             <li class="goods__pages-item">
-              <a href="#" class="goods__link page" alt="page_three">3</a>
+              <a href="#" class="goods__link page">3</a>
             </li>
             <li class="goods__pages-item">
-              <a href="#" class="goods__link page" alt="page_four">4</a>
+              <a href="#" class="goods__link page">4</a>
             </li>
           </ul>
           <a href="#" class="goods__link pages_next">
@@ -266,28 +265,28 @@
 
       <div class="footer__additional">
         <div class="footer__success"> 
-          <form class="footer__success-list">
-            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+          <form class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star hidden" id="star-5" type="radio" name="rating" value="5">
             <label class="footer__lable-star" for="star-5" title="Оценка «5»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <input class="footer__input-star hidden" id="star-4"  type="radio" name="rating" value="4">
             <label class="footer__lable-star" for="star-4" title="Оценка «4»">
               <img class="star" src="/images/star.png" alt="star" >
-            </label> 
-            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            </label>
+            <input class="footer__input-star hidden" id="star-3" type="radio" name="rating" value="3">
             <label class="footer__lable-star" for="star-3" title="Оценка «3»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <input class="footer__input-star hidden" id="star-2" type="radio" name="rating" value="2">
             <label class="footer__lable-star" for="star-2" title="Оценка «2»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <input class="footer__input-star hidden" id="star-1" type="radio" name="rating" value="1">
             <label class="footer__lable-star" for="star-1" title="Оценка «1»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <p class="footer__success-title footer__success-title_js footer__success-title_hover">Company Rating</p>
+            <p class="footer__success-title">Company Rating</p>
           </form>
         </div> 
 

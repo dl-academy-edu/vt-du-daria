@@ -2,17 +2,6 @@
   opacity: 0.5;
 }
 
-/*contact-us******************************/
-.title {
-  padding-bottom: 4px;
-  padding-top: 22px;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-}
-
 /* contact *******************************/
 .contact {
   display: flex;
@@ -64,8 +53,9 @@ fieldset {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.contact-window__input:hover {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) inset;
+.contact-window__input:hover,
+.contact-window__input:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) inset;
 }
 
 .contact-window__label {
@@ -101,6 +91,10 @@ fieldset {
   height: 14px;
 }
 
+.contact-window__accept-checkbox + .active {
+  content: url("/images/accept.png");
+}
+
 .contact-window__text {
   margin-left: 8px;
 }
@@ -128,13 +122,10 @@ fieldset {
   background: #CFAF91;
 }
 
-/* additional-inform ***********************/
+/* additional-inform ************************/
 .contact__additional-inform {
   padding-left: 120px;
   width: 500px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 }
@@ -150,6 +141,6 @@ fieldset {
 }
 
 .contact__text {
-  margin: 0px;
+  margin: 0;
   padding-bottom: 20px;
 }

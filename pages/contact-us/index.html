@@ -3,7 +3,7 @@
   <head>
 		<meta charset="UTF-8"/>
     <title>Contact Us / Designe Life Kids</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/../common.css">
     <link rel="stylesheet" href="style.css">
@@ -43,7 +43,7 @@
         <div class="contact-bg">
           <form class="contact-window " action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
             <label class="contact-window__label" for="user-name"> Name</label>
-            <input class="contact-window__input" id="user-name" type="text" name="name">
+            <input class="contact-window__input" id="user-name" type="text" name="name" placeholder="Ivan Ivanov">
             
             <div class="contact-window__user">
               <div class="contact-window__user-inf">
@@ -63,7 +63,7 @@
             <fieldset class="contact-window__accept">
               <label class="contact-window__accept-lable">
                 <input class="contact-window__accept-checkbox hidden" type="checkbox" name="accept" value="accept">
-                <span class="contact-window__accept-checkbox-click"></span>
+                <span class="contact-window__accept-checkbox-click active"></span>
                 <span class="contact-window__text">By click on the button, you concent to the processing of you personal data</span>
               </label>
             </fieldset>
@@ -136,24 +136,24 @@
 
       <div class="footer__additional">
         <div class="footer__success"> 
-          <form class="footer__success-list">
-            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+          <form class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star hidden" id="star-5" type="radio" name="rating" value="5">
             <label class="footer__lable-star" for="star-5" title="Оценка «5»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <input class="footer__input-star hidden" id="star-4"  type="radio" name="rating" value="4">
             <label class="footer__lable-star" for="star-4" title="Оценка «4»">
               <img class="star" src="/images/star.png" alt="star" >
-            </label> 
-            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            </label>
+            <input class="footer__input-star hidden" id="star-3" type="radio" name="rating" value="3">
             <label class="footer__lable-star" for="star-3" title="Оценка «3»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <input class="footer__input-star hidden" id="star-2" type="radio" name="rating" value="2">
             <label class="footer__lable-star" for="star-2" title="Оценка «2»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <input class="footer__input-star hidden" id="star-1" type="radio" name="rating" value="1">
             <label class="footer__lable-star" for="star-1" title="Оценка «1»">
               <img class="star" src="/images/star.png" alt="star">
             </label>

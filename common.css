@@ -1,9 +1,8 @@
-/* Глобальные стили */
+/* Global styles */
 body { 
   font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Crimson Text', serif; */
-  /* font-family: 'Roboto', sans-serif; */
+  font-style: normal;
+  font-weight: normal;
   margin: 0;
   background-color: #F4F4F4;
 }
@@ -37,7 +36,7 @@ img {
 .container {
   width: 100%;
   max-width: 1220px;
-  padding: 0px 20px;
+  padding: 0 20px;
   margin: 0 auto; 
 }
 
@@ -52,6 +51,17 @@ img {
 }
 
 /* header *************************************/
+
+.title {
+  padding-bottom: 4px;
+  padding-top: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
 .header {
   display: flex;
   padding: 49px 20px 36px;
@@ -61,6 +71,14 @@ img {
 .header__logo {
   min-width: 100px;
   height: 52px;
+}
+
+.header__logo:hover {
+  opacity: 0.5;
+}
+
+li span[class="header__nav-item"]:hover {
+  opacity: 1;
 }
 
 .header__nav {
@@ -78,7 +96,7 @@ img {
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: 60px;
 }
 
@@ -97,6 +115,10 @@ img {
 
 .header__nav-item:hover {
   opacity: 0.5;
+}
+
+span.header__nav-item:hover > .not_active {
+  opacity: 1;
 }
 
 .header__nav-item_link-bold {
@@ -150,9 +172,6 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   background: #434343;
@@ -183,18 +202,14 @@ img {
 }
 
 .footer__titles,
-.footer__nav {
-  padding: 0px;
-  margin: 0px;
+.footer__nav,
+.footer__nav-list {
+  padding: 0;
+  margin: 0;
 }
 
 .footer__nav {
   width: 389px;
-}
-
-.footer__nav-list {
-  padding: 0px;
-  margin: 0px;
 }
 
 .footer__titles::after {
@@ -210,7 +225,7 @@ img {
 }
 
 .footer__nav-item {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
   background-color: #434343;
 }
@@ -250,7 +265,7 @@ img {
   color: #FFFFFF;
 }
 
-/* КНОПКА */
+/* JOIN */
 .footer__button-join {
   width: 81px; 
   padding: 11px 22px;
@@ -258,7 +273,6 @@ img {
   color: #FFFFFF;
   background-color: #000000;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 
@@ -271,13 +285,11 @@ img {
 } 
 
 .footer__social-list {
-  display:flex;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
   padding: 25px 0 0;
-  margin: 0px;
-}
-
-.footer__social-item {
-  padding-right: 10px;
+  margin: 0;
 }
 
 .footer__img:hover {
@@ -318,30 +330,25 @@ img {
   float: left;
 }
 
-.footer__input-star {
-  display: none;
-} 
-
-.footer__success-list:not(:checked) > label {
+.footer__success-list > label {
   margin-left: 5px;
 	cursor: pointer;
 }
 
-.rating-area:not(:checked) > label:before {
-  content:url("/images/star.png");
-  cursor: pointer;
-}
-
-.footer__success-list > input:hover ~ label {
+.footer__success-list > input:hover ~ label,
+.footer__success-list > input:checked ~ label {
   content:url("/images/star-hover.png");
-  margin-bottom: 1.55px;
+  margin-bottom: 2px;
   cursor: pointer;
 }
 
 .footer__success-list > input:checked ~ label {
   content:url("/images/star-focus.png");
-  margin-bottom: 1.55px;
-  cursor: pointer;
+}
+
+.footer__success-list > input:focus ~ label {
+  box-shadow: 0px 0px 0px 1.5px #79ABFE inset;
+  border-radius: 2px;
 }
 
 .footer__link:hover {
@@ -349,11 +356,8 @@ img {
   color: #FFFFFF;
 }
 
+.footer__success-list label:hover ~ p,
 .footer__success-list input:checked ~ p {
-  color: #C29974;
-}
-
-.footer__success-list label:hover ~ p {
   color: #C29974;
 }
 

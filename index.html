@@ -3,7 +3,7 @@
   <head>
 		<meta charset="UTF-8"/>
     <title>Designe Life Kids</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
 	<body>
     <header class="header-main container-back">
       <div class="header container">
-        <a class="header__logo" href="#">
+        <a class="header__logo no_active">
           <img class="header__img-logo" src="/images/logo.png" alt="logo">
         </a>
         <nav class="header__nav">
@@ -102,10 +102,9 @@
             <h2 class="additional-inform__title">DELIVERY</h2>
   
             <div class="additional-inform__menu">
-              <button type="button" class="additional-inform__menu-item active">Delivery</button>
-              <button type="button" class="additional-inform__menu-item">Guarantee</button>
-              <button type="button" class="additional-inform__menu-item">Credit</button>
-            
+              <button type="button" class="additional-inform__menu-button active">Delivery</button>
+              <button type="button" class="additional-inform__menu-button">Guarantee</button>
+              <button type="button" class="additional-inform__menu-button">Credit</button>
             </div>
   
             <div class="additional-inform__content">
@@ -162,7 +161,7 @@
             Some days i feel like i've been working on dlk my entire life and 
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.</p>
-          <img class="about-us__img-bg" src="/images/map.jpg" alt="map">
+          <iframe class="about-us__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5790052710736!2d-122.41938908469996!3d37.77646847975914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter!5e0!3m2!1sen!2sru!4v1584077262461!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
@@ -223,23 +222,23 @@
       <div class="footer__additional">
         <div class="footer__success"> 
           <form class="footer__success-list footer__success-list_js">
-            <input class="footer__input-star" id="star-5" type="radio" name="rating" value="5">
+            <input class="footer__input-star hidden" id="star-5" type="radio" name="rating" value="5">
             <label class="footer__lable-star" for="star-5" title="Оценка «5»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-4"  type="radio" name="rating" value="4">
+            <input class="footer__input-star hidden" id="star-4"  type="radio" name="rating" value="4">
             <label class="footer__lable-star" for="star-4" title="Оценка «4»">
               <img class="star" src="/images/star.png" alt="star" >
-            </label> 
-            <input class="footer__input-star" id="star-3" type="radio" name="rating" value="3">
+            </label>
+            <input class="footer__input-star hidden" id="star-3" type="radio" name="rating" value="3">
             <label class="footer__lable-star" for="star-3" title="Оценка «3»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-2" type="radio" name="rating" value="2">
+            <input class="footer__input-star hidden" id="star-2" type="radio" name="rating" value="2">
             <label class="footer__lable-star" for="star-2" title="Оценка «2»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
-            <input class="footer__input-star" id="star-1" type="radio" name="rating" value="1">
+            <input class="footer__input-star hidden" id="star-1" type="radio" name="rating" value="1">
             <label class="footer__lable-star" for="star-1" title="Оценка «1»">
               <img class="star" src="/images/star.png" alt="star">
             </label>
