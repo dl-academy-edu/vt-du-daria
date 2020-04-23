@@ -3,90 +3,91 @@
   <head>
 		<meta charset="UTF-8"/>
     <title>Designe Life Kids</title>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
   </head>
   
 	<body>
-    <header class="header">
-      <a href="/index.html">
-        <img class="header__log" src="/images/logo.svg" alt="logo">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
-          <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
-          <li><a class="header__nav-item" href="#">ABOUT US</a></li>
-        </ul>
-        <ul class="header__nav-list">
-          <li><a class="header__nav-item" href="#"><img src="/images/search.svg" alt="Search"/></a></li>
-          <li><a class="header__nav-item-bold" href="#">CONTACT US</a></li>
-        </ul>
-      </nav>
+    <header class="header-main container-back">
+      <div class="header container">
+        <a class="header__logo no_active">
+          <img class="header__img-logo" src="/images/logo.png" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
+            <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
+            <li><a class="header__nav-item" href="/pages/toys/index.html">TOYS</a></li>
+            <li><a class="header__nav-item" href="#">ABOUT US</a></li>
+          </ul>
+          <ul class="header__nav-list_links">
+            <li><a class="header__nav-item" href="#"><img src="/images/search.png" alt="Search"/></a></li>
+            <li><a class="header__nav-item_link-bold" href="/pages/contact-us/index.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="slider">
-        <div class="slider__nav">
-          <p class="slider__nav-text">01</p>
-          <div class="slider__nav-inner">
-            <button class="slider__nav-item active"></button>
-            <button class="slider__nav-item"></button>
-            <button class="slider__nav-item"></button>
-            <button class="slider__nav-item"></button>
+    <main class="main container-back">
+      <section class="slider container">
+        <div class="slider__header">
+          <div class="slider__nav">
+            <p class="slider__nav-text">01</p>
+            <button class="slider__nav-button active"></button>
+            <button class="slider__nav-button"></button>
+            <button class="slider__nav-button"></button>
+            <button class="slider__nav-button"></button>
           </div>
+  
+          <div class="slider__header-title">
+            <h2 class="slider__title">THE OOH NOO COLLECTION</h2>
+            <p class="slider__text">Designed in Slovenia</p>
+            <a class="slider__link slider__link_js" href="#">EXPLORE NOW</a>
+          </div>
+  
+          <img class="slider__link-bg" src="/images/monster.png" alt="monster in a wheelbarrow">
         </div>
-
-        <h2 class="slider__title">
-          THE OOH NOO COLLECTION
-        </h2>
-        <p class="slider__text">Designed in Slovenia</p>
-        <a class="slider__link" href="#">Explore now</a>
-        <img src="/images/monster.png" alt="monster in a wheelbarrow" class="slider__link-bg"><br>
-        
         <div class="slider__text_addit">
           Free (continental) USA shipping on all orders of $100 USD or more!
         </div>
       </section>
 
-      <section class="goods">
+      <section class="goods container">
         <h2 class="goods__title">CATEGORY PRODUCTS</h2>
         <ul class="goods__list">
           <li class="goods__list-item">
-            <a href="/pages/catalog/index.html" class="goods__link">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/kids.png); background-color: #DBE4DB;">
               <span class="goods__link-title">APPAREL KIDS</span>
-              <img src="/images/kids.png" alt="APPAREL KIDS" class="goods__link-grey">
             </a>
           </li>
-
           <li class="goods__list-item">
-            <a href="/pages/catalog/index.html" class="goods__link">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/holiday.png); background-color: rgba(186, 142, 107, 0.3);">
               <span class="goods__link-title">HOLIDAY SHOP</span>
-              <img src="/images/holiday.png" alt="HOLIDAY SHOP" class="goods__link-pale_pink">
             </a>
           </li>
-
           <li class="goods__list-item">
-            <a href="/pages/catalog/index.html" class="goods__link">
+            <a class="goods__link" href="/pages/toys/index.html" style="background-image: url(/images/toys.png); background-color: #F8F2DA;">
               <span class="goods__link-title">TOYS</span>
-              <img src="/images/toys.png" alt="TOYS" class="goods__link-beige">
             </a>
           </li>
-
           <li class="goods__list-item">
-            <a href="/pages/catalog/index.html" class="goods__link">
+            <a class="goods__link" href="/pages/catalog/index.html" style="background-image: url(/images/accesseories.png); background-color: rgba(9, 3, 79, 0.17);">
               <span class="goods__link-title">ACCESSORIES</span>
-              <img src="/images/accesseories.png" alt="ACCESSORIES" class="goods__link-violet">
             </a>
           </li>
         </ul>
 
         <div class="goods__slider">
           <div class="goods__slider-nav">
-            <button type="button" class="goods__slider-prev"></button>
-            <button type="button" class="goods__slider-next"></button>
+            <button type="button" class="goods__slider-prev">
+              <img class="img-button" src="/images/vector-prev.png" alt="button-prev">
+            </button>
+            <button type="button" class="goods__slider-next">
+              <img class="img-button" src="/images/vector-next.png" alt="button-next">
+            </button>
           </div>
 
           <div class="goods__slider-content">
@@ -95,45 +96,59 @@
         </div>
       </section>
 
-      <section class="additional-inform">
-        <div class="additional-inform__thumb">
-          <img src="/images/woman.jpg" alt="Image with a woman">
-        </div>
+      <section class="additional-inform container">
+          <img class="additional-inform__img" src="/images/woman.jpg" alt="Image with a woman">
 
-        <div class="additional-inform__inner">
-          <h2 class="additional-inform__title">DELIVERY</h2>
-
-          <div class="additional-inform__menu">
-            <button type="button" class="additional-inform__menu-item active">Delivery</button>
-            <button type="button" class="additional-inform__menu-item">Guarantee</button>
-            <button type="button" class="additional-inform__menu-item">Credit</button>
+          <div class="additional-inform__inner">
+            <h2 class="additional-inform__title">DELIVERY</h2>
+  
+            <div class="additional-inform__menu">
+              <button type="button" class="additional-inform__menu-button active">Delivery</button>
+              <button type="button" class="additional-inform__menu-button">Guarantee</button>
+              <button type="button" class="additional-inform__menu-button">Credit</button>
+            </div>
+  
+            <div class="additional-inform__content">
+              <p class="additional-inform__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
+                shocked that four years have flown by. It's simply magical.</p>
+              <p class="additional-inform__text">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place
+                for me and i have you and all of the beautiful designers that we work with to thank!</p>
+              <a href="#" class="additional-inform__link">LEARN MORE</a>
+            </div>
           </div>
-
-          <div class="additional-inform__content">
-            <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely
-              shocked that four years have flown by. It's simply magical.</p>
-            <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place
-              for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a href="#" class="additional-inform__link">LEARN MORE</a>
-          </div>
-        </div>
       </section>
 
-      <section class="partners">
-        <h2 class="visually-hidden">Partners</h2>
+      <section class="partners container">
+        <h2 class="hidden">Partners</h2>
         <ul class="partners__list">
-          <li><a class="partners__list-item" href="#"><img src="/images/mail.png" alt="mail"></a></li>
-          <li><a class="partners__list-item" href="#"><img src="/images/apple.png" alt="apple"></a></li>
-          <li><a class="partners__list-item" href="#"><img src="/images/eltex.png" alt="eltex"></a></li>
-          <li><a class="partners__list-item" href="#"><img src="/images/owox.png" alt="owox"></a></li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/mail.png" alt="mail">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/apple.png" alt="apple">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/eltex.png" alt="eltex">
+            </a>
+          </li>
+          <li>
+            <a class="partner__list-item" href="#">
+              <img class="partner__img" src="/images/owox.png" alt="owox">
+            </a>
+          </li>
         </ul>
       </section>
 
-      <section class="about-us">
-        <div class="about-us__meta">
+      <section class="about-us container">
+        <div class="about-us__block inform-1">
           <h3 class="about-us__title">DESIGN LIFE KIDS</h3>
-          <button type="button" class="about-us__button">About us</button>
-          <p class="about-us__content">
+          <button class="about-us__button" type="button">About Us</button>
+          <p class="about-us__text">
             Some days i feel like i've been working on dlk 
             my entire life and there are other days that i am completely shocked
             that four years have flown by. It's simply magical.
@@ -141,101 +156,138 @@
           <a class="about-us__link" href="#">BY NOW</a>
         </div>
 
-        <div class="about-us__meta">
+        <div class="about-us__block inform-2">
           <h3 class="about-us__title">CONTACTS</h3>
-          <p class="about-us__content">
+          <p class="about-us__text">
             Some days i feel like i've been working on dlk my entire life and 
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.</p>
-          <img class="about-us__link-bg" src="/images/map.jpg" alt="map">
+          <iframe class="about-us__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5790052710736!2d-122.41938908469996!3d37.77646847975914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter!5e0!3m2!1sen!2sru!4v1584077262461!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <nav class="footer__nav">
-        <p class="footer__nav-title">Navigation</p>
-        <ul class="footer__nav-list">
-          <li><a class="footer__nav-item" href="#">About us</a></li>
-          <li><a class="footer__nav-item" href="#">Blog</a></li>
-          <li><a class="footer__nav-item" href="#">Design Services</a></li>
-          <li><a class="footer__nav-item" href="#">Featured On</a></li>
-          <li><a class="footer__nav-item" href="#">2018 Holiday Catalog</a></li>
-          <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer__nav">
-        <p class="footer__nav-title">Customer Information</p>
-        <ul class="footer__nav-list">
-          <li><a class="footer__nav-item" href="#">Contact us</a></li>
-          <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
-          <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
-          <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
-          <li><a class="footer__nav-item" href="#"> Privacy Policy</a></li>
-          <li><a class="footer__nav-item" href="#">Search</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__user">
-        <p class="footer__user-title">Connect</p>
-        <form action="URL">
-          <input type="email" name="email" placeholder="Email">
-          <button  class ="button-join" type="submit" value="join">JOIN</button>
-        </form>
-
-        <div class="footer__social">
-          <ul class="footer__social-list">
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/twitter.png" alt="Twitter"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/pinterest.png" alt="Pinterest"></a>
-            </li>
-            <li><a class="footer__social-item" href="#">
-              <img class="footer__img" src="/images/instagram.png" alt="Instagram"></a>
-            </li>
+    <footer class="footer container-back">
+      <div class="footer__nav-connect">
+        <div class="footer__nav">
+          <p class="footer__titles">Navigation</p>
+          <ul class="footer__nav-list">
+            <li><a class="footer__nav-item" href="#">About Us</a></li>
+            <li><a class="footer__nav-item" href="/pages/blog/index.html">Blog</a></li>
+            <li><a class="footer__nav-item" href="#">Design Services</a></li>
+            <li><a class="footer__nav-item" href="#">Featured On</a></li>
+            <li><a class="footer__nav-item" href="#">2018 Holiday Catalog</a></li>
+            <li><a class="footer__nav-item" href="#">Shop By Designer</a></li>
           </ul>
         </div>
+
+        <div class="footer__nav">
+          <p class="footer__titles">Customer Information</p>
+          <ul class="footer__nav-list">
+            <li><a class="footer__nav-item" href="/pages/contact-us/index.html">Contact Us</a></li>
+            <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
+            <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
+            <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
+            <li><a class="footer__nav-item" href="#"> Privacy Policy</a></li>
+            <li><a class="footer__nav-item" href="#">Search</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__user-connect">
+          <p class="footer__titles">Connect</p>
+
+          <form action="URL">
+            <input class="footer__input-email" type="email" name="email" placeholder="Email"><!--
+          --><button  class ="footer__button-join" type="submit" value="join">JOIN</button>
+          </form>
+
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/facebook.png" alt="Facebook"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/twitter.png" alt="Twitter"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/pinterest.png" alt="Pinterest"></a>
+              </li>
+              <li><a class="footer__social-item" href="#">
+                <img class="footer__img" src="/images/instagram.png" alt="Instagram"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-      <div class="footer__success">
-        <p class="footer__success-title">Company Rating</p>
-        <ul class="footer__success-list">
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-          <li class="footer__success-item">&#9733;</li>
-        </ul>
+
+      <div class="footer__additional">
+        <div class="footer__success"> 
+          <form class="footer__success-list footer__success-list_js">
+            <input class="footer__input-star hidden" id="star-5" type="radio" name="rating" value="5">
+            <label class="footer__lable-star" for="star-5" title="Оценка «5»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star hidden" id="star-4"  type="radio" name="rating" value="4">
+            <label class="footer__lable-star" for="star-4" title="Оценка «4»">
+              <img class="star" src="/images/star.png" alt="star" >
+            </label>
+            <input class="footer__input-star hidden" id="star-3" type="radio" name="rating" value="3">
+            <label class="footer__lable-star" for="star-3" title="Оценка «3»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star hidden" id="star-2" type="radio" name="rating" value="2">
+            <label class="footer__lable-star" for="star-2" title="Оценка «2»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <input class="footer__input-star hidden" id="star-1" type="radio" name="rating" value="1">
+            <label class="footer__lable-star" for="star-1" title="Оценка «1»">
+              <img class="star" src="/images/star.png" alt="star">
+            </label>
+            <p class="footer__success-title">Company Rating</p>
+          </form>
+        </div> 
+
+        <div class="footer__copyr">
+          <p >Copyright &#169; 2018 Dlk • Design Life Kids</p>
+        </div>
+        <div class="footer__web-design">
+          <a class="footer__link" href="#">Web Design — Direct Line Development</a>
+        </div>
       </div>
-      <p class="footer__success-copyr">Copyright &#169; 2018 Dlk • Design Life Kids</p>
-      <a class="footer__link" href="#">Web Design — Direct Line Development</a>
     </footer>
 
-    <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
-      <label class="modal__label" for="user-name" >Name</label>
-      <input class="modal__input" id="user-name" type="text" name="name">
+    <div class="modal-bg modal-bg_close modal-bg_js">
+      <form class="modal-window" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <label class="modal-window__label" for="user-name"> Name</label>
+        <input class="modal-window__input modal-window__input_js" id="user-name" type="text" name="name">
+        
+        <div class="modal-window__user">
+          <div class="modal-window__user-inf">
+            <label class="modal-window__label" for="user-phone">Phone</label>
+            <input class="modal-window__input" id="user-phone" type="text" name="phone">
+          </div>
 
-      <label class="modal__label" for="user-phone" >Phone</label>
-      <input class="modal__input" id="user-phone" type="text" name="phone">
-
-      <label class="modal__label" for="user-email" >Email</label>
-      <input class="modal__input" id="user-email" type="email" name="email">
-
-      <label class="modal__label" for="user-message" >Message</label>
-      <textarea class="modal__input" id="user-message" name="message"></textarea>
-
-      <fieldset class="modal__accept">
-        <input type="checkbox" id="user-accept" name="accept" value="accept">
-        By click on the button, you concent to the processing of you personal data
-      </fieldset>
-
-      <button class="button-submit" type="submit">SUBMIT</button>
-      <button class="button-to-close" type="button">X</button>
-    </form>
+          <div class="modal-window__user-inf">
+            <label class="modal-window__label" for="user-email">Email</label>
+            <input class="modal-window__input" id="user-email" type="email" name="email">
+          </div>
+        </div>
+        
+        <label class="modal-window__label" for="user-message">Message</label>
+        <textarea class="modal-window__input" id="user-message" name="message"></textarea>
+  
+        <fieldset class="modal-window__accept">
+          <label class="modal-window__accept-lable">
+            <input class="modal-window__accept-checkbox hidden" type="checkbox" name="accept" value="accept">
+            <span class="modal-window__accept-checkbox-click"></span>
+            <span class="modal-window__text">By click on the button, you concent to the processing of you personal data</span>
+          </label>
+        </fieldset>
+  
+        <button class="modal-window__button-submit" type="submit">SUBMIT</button>
+        <button class="modal-window__button_to_close modal-window__button_to_close_js" type="button" value="closed"></button>
+      </form>
+    </div>
+    <script src="script.js"></script>
 	</body>
 </html>

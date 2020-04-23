@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 		<meta charset="UTF-8"/>
-    <title>Catalog / Designe Life Kids</title>
+    <title>Contact Us / Designe Life Kids</title>
     <link rel="icon" href="/../../images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700/Montserrat:400,700,900/Open+Sans:400,700/Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -19,73 +19,65 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li><a class="header__nav-item" href="/pages/blog/index.html">BLOG</a></li>
-            <li><span class="header__nav-item">CATALOG</span></li>
+            <li><a class="header__nav-item" href="/pages/catalog/index.html">CATALOG</a></li>
             <li><a class="header__nav-item" href="/pages/toys/index.html">TOYS</a></li>
-            <li><a class="header__nav-item" href="#">ABOUT US</a></li>
+            <li><span class="header__nav-item">ABOUT US</span></li>
           </ul>
           <ul class="header__nav-list_links">
             <li><a class="header__nav-item" href="#"><img src="/../../images/search.png" alt="Search"/></a></li>
-            <li><a class="header__nav-item_link-bold" href="/pages/contact-us/index.html">CONTACT US</a></li>
+            <li><span class="header__nav-item_link-bold">CONTACT US</span></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="main container-back">
-      <h1 class="title container">CATEGORY PRODUCTS</h1>
-
+      <h1 class="title container">CONTACT US</h1>
       <div class="breadcrumbs container">
         <a class="breadcrumbs__link" href="/../../index.html">Home</a>
         <img class="breadcrumbs__img" src="/../../images/vector.png" alt="vector">
-        <span class="breadcrumbs__current-page">Catalog</span>
+        <span class="breadcrumbs__current-page">Contact Us</span>
       </div>
 
-      <section class="goods container">
-        <h2 class="hidden">Goods</h2>
-        <ul class="goods__list">
-          <li class="goods__list-item">
-            <a class="goods__link" href="#" style="background-image: url(/images/kids.png); background-color: #DBE4DB;">
-              <span class="goods__link-title">APPAREL KIDS</span>
-            </a>
-          </li>
-          <li class="goods__list-item">
-            <a class="goods__link" href="#" style="background-image: url(/images/holiday.png); background-color: rgba(186, 142, 107, 0.3);">
-              <span class="goods__link-title">HOLIDAY SHOP</span>
-            </a>
-          </li>
-          <li class="goods__list-item">
-            <a class="goods__link" href="/pages/toys/index.html" style="background-image: url(/images/toys.png); background-color: #F8F2DA;">
-              <span class="goods__link-title">TOYS</span>
-            </a>
-          </li>
-          <li class="goods__list-item">
-            <a class="goods__link" href="#" style="background-image: url(/images/accesseories.png); background-color: rgba(9, 3, 79, 0.17);">
-              <span class="goods__link-title">ACCESSORIES</span>
-            </a>
-          </li>
-          <li class="goods__list-item">
-            <a href="#" class="goods__link" style="background-image: url(/images/sale.png); background-color: rgba(207, 68, 111, 0.25);">
-              <span class="goods__link-title">SALE</span>
-            </a>
-          </li>
-          <li class="goods__list-item">
-            <a href="#" class="goods__link" style=" background-image: url(/images/adults.png); background-color: rgba(125, 151, 218, 0.2);">
-              <span class="goods__link-title">APPAREL ADULTS</span>
-            </a>
-          </li> 
-        </ul>
-      </section>
+      <section class="contact container">
+        <h2 class="hidden">contact</h2>
+        <div class="contact-bg">
+          <form class="contact-window " action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+            <label class="contact-window__label" for="user-name"> Name</label>
+            <input class="contact-window__input" id="user-name" type="text" name="name" placeholder="Ivan Ivanov">
+            
+            <div class="contact-window__user">
+              <div class="contact-window__user-inf">
+                <label class="contact-window__label" for="user-phone">Phone</label>
+                <input class="contact-window__input" id="user-phone" type="text" name="phone">
+              </div>
+    
+              <div class="contact-window__user-inf">
+                <label class="contact-window__label" for="user-email">Email</label>
+                <input class="contact-window__input" id="user-email" type="email" name="email">
+              </div>
+            </div>
+            
+            <label class="contact-window__label" for="user-message">Message</label>
+            <textarea class="contact-window__input" id="user-message" name="message"></textarea>
 
-      <section class="additional-inform container">
-        <h2 class="additional-inform__title">PRODUCTS DESCRIPTION</h2>
-        <div class="additional-inform__content">
-          <p class="additional-inform__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost 
-            really cry. You can even bathe her, just like a little sister.</p>
-          <p class="additional-inform__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright.
-            Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-          <p class="additional-inform__text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, 
-            a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, 
-            the other for her young mistress.</p>
+            <fieldset class="contact-window__accept">
+              <label class="contact-window__accept-lable">
+                <input class="contact-window__accept-checkbox hidden" type="checkbox" name="accept" value="accept">
+                <span class="contact-window__accept-checkbox-click active"></span>
+                <span class="contact-window__text">By click on the button, you concent to the processing of you personal data</span>
+              </label>
+            </fieldset>
+      
+            <button class="contact-window__button-submit" type="submit" value="submit">SUBMIT</button>
+          </form>
+        </div>
+        
+        <div class="contact__additional-inform">
+          <p class="contact__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p class="contact__text">Please use the form to contact us with your needs. Send us a message and we'll respond
+            as soon as possible.</p>
+          <a href="#" class="contact__additional-inform__link">An expert is wating to help you!</a>
         </div>
       </section>
     </main>
@@ -107,7 +99,7 @@
         <div class="footer__nav">
           <p class="footer__titles">Customer Information</p>
           <ul class="footer__nav-list">
-            <li><a class="footer__nav-item" href="/../../pages/contact-us/index.html">Contact Us</a></li>
+            <li><a class="footer__nav-item" href="#">Contact Us</a></li>
             <li><a class="footer__nav-item" href="#">Sale Exclusion</a></li>
             <li><a class="footer__nav-item" href="#">Shipping &#38; Returns</a></li>
             <li><a class="footer__nav-item" href="#">Terms &#38; Conditions</a></li>
@@ -168,7 +160,7 @@
             </label>
             <p class="footer__success-title">Company Rating</p>
           </form>
-        </div>
+        </div> 
 
         <div class="footer__copyr">
           <p >Copyright &#169; 2018 Dlk • Design Life Kids</p>
@@ -178,5 +170,5 @@
         </div>
       </div>
     </footer>
-	</body>
+  </body>
 </html>

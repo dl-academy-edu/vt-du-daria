@@ -1,38 +1,30 @@
 .announce__list-item,
-.announce__pages-list {
+.announce__pages-item {
   list-style-type: none;
 }
 
-.title{
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+.header__img-logo[href]:hover {
+  opacity: 1;
 }
 
-.breadcrumbs {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
+/* announce *************************/
+.announce {
+  padding-top: 28px;
 }
 
-.breadcrumbs__link {
-  color: #1E0606;
+.announce__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
-/* announce */
+.announce__list-item {
+  width: 380px;
+}
+
 .announce__link-bg {
-  background-image: url("/../../images/top_5.jpg");
-  background-image: url("/../../images/financial.jpg");
-  background-image: url("/../../images/company.jpg");
-  background-image: url("/../../images/best_fin.jpg");
-  background-image: url("/../../images/princess.jpg");
-  background-image: url("/../../images/fastes_5.jpg" );
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
+  padding-bottom: 17px
 }
 
 .announce__date {
@@ -45,6 +37,9 @@
 }
 
 .announce__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -53,20 +48,71 @@
   color: #1E0606;
 }
 
+.announce__link:hover .announce__title {
+  text-decoration: underline;
+}
+
 .announce__text {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  margin: 0;
+  padding-bottom: 40px;
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
 }
 
+/* announce__pages ***********************/
+.announce__pages {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 43px; 
+  align-items: center;
+}
+
 .announce__pages-list {
+  display: flex;
+  width: 234px;
+  margin: auto;
+  padding-left: 0;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   color: #1E0606;
+}
+
+.page {
+  color: #1E0606;
+}
+
+.page:hover,
+.announce__pages-list .active {
+  color: #C29974;
+}
+
+.pages_prev,
+.pages_prev:hover {
+  background-image: url("/../../images/next-prev-pages.png");
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
+}
+
+.pages_prev:hover {
+  background-image: url("/../../images/next-prev-hov.png");
+}
+
+.pages_next,
+.pages_next:hover {
+  background-image: url("/../../images/next-prev-pages.png");
+  background-repeat: no-repeat;
+}
+
+.pages_next:hover {
+  background-image: url("/../../images/next-prev-hov.png");
+}
+
+.pages_prev:active,
+.pages_next:active {
+  opacity: 0.5;
 }

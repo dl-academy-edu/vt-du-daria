@@ -1,0 +1,146 @@
+.header__img-logo:hover {
+  opacity: 0.5;
+}
+
+/* contact *******************************/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 43px;
+  padding-bottom: 61px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact-window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  width: 680px;
+  min-height: 542px;
+  background: #E5EAF8;
+  border: none;
+}
+
+.contact-window__user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-window__user-inf {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+
+textarea {
+  width: 600px;
+  height: 150px; 
+  resize: none;
+} 
+
+fieldset {
+  border: none;
+}
+
+.contact-window__input {
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-window__input:hover,
+.contact-window__input:active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.contact-window__label {
+  margin-bottom: 6px;
+}
+
+.contact-window__accept {
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.contact-window__accept-lable {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-window__accept-checkbox-click {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+}
+
+.contact-window__accept-checkbox:focus + .contact-window__accept-checkbox-click {
+  border: 2px solid rgb(141, 113, 90)
+}
+
+.contact-window__accept-checkbox:checked + .contact-window__accept-checkbox-click::before {
+  content: url("/images/accept.png");
+  margin: auto;
+  width: 14px;
+  height: 14px;
+}
+
+.contact-window__accept-checkbox + .active {
+  content: url("/images/accept.png");
+}
+
+.contact-window__text {
+  margin-left: 8px;
+}
+
+/*button-submit****************************/
+.contact-window__button-submit {
+  display: block;
+  width: 106px;
+  padding: 9px 22px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-window__button-submit:hover {
+  background: #C29974;
+}
+
+.contact-window__button-submit:active {
+  background: #CFAF91;
+}
+
+/* additional-inform ************************/
+.contact__additional-inform {
+  padding-left: 120px;
+  width: 500px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contact__additional-inform__link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #C29974;
+}
+
+.contact__text {
+  margin: 0;
+  padding-bottom: 20px;
+}
